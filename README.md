@@ -83,6 +83,7 @@ redone:
 - Stack: new format from above.
 - linked list: done with format.
 - Queue: done with format.
+- Hash: done with format.
 
 
 - Sit down and listen / read each chapter per day or two and see if anything is missing or if there is something that needs to be added
