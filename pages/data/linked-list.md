@@ -1,5 +1,7 @@
 # Linked List
 
+## Introduction
+
 A linked list is a linear data structure consisting of nodes, where each node contains a data element and a reference (or link) to the next node in the sequence. Unlike arrays, linked lists do not require contiguous memory allocation, which allows for efficient insertion and deletion of elements at any position within the list.
 
 ## Node

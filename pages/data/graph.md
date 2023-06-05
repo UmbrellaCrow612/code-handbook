@@ -1,56 +1,235 @@
-## Graphs
+# Graphs
 
-A graph is a non-linear data structure that consists of a collection of vertices (nodes) connected by edges. Graphs are widely used to represent relationships between objects and to solve various real-world problems.
+## Introduction
 
-### Terminology
+A graph is a non-linear data structure that represents a collection of vertices (nodes) connected by edges. It is widely used to model relationships and solve real-world problems efficiently.
 
-- **Vertices**: Also known as nodes, these are the entities or objects in a graph. Vertices can represent any type of object, not just numerical values.
-- **Edges**: The connections between vertices that represent the relationships or interactions between them. Edges can have a direction (directed graph) or no specific direction (undirected graph).
-- **Directed Graph**: A graph in which edges have a specific direction, indicating a one-way relationship.
-- **Undirected Graph**: A graph in which edges have no specific direction and represent a two-way relationship.
-- **Weighted Graph**: A graph in which edges are assigned weights or values to represent the cost or distance between vertices.
-- **Degree**: The number of edges connected to a vertex.
-- **Path**: A sequence of vertices connected by edges.
+## Types of Graphs with Diagrams
 
-### Types of Graphs
+1. Directed Acyclic Graph (DAG): A directed graph with no directed cycles. It is often used for representing dependencies and task scheduling.
 
-There are several types of graphs based on their characteristics:
+   Diagram:
 
-- **Directed Acyclic Graph (DAG)**: A directed graph with no directed cycles, which means it doesn't have any paths that start and end at the same vertex. DAGs are commonly used in modeling dependencies and task scheduling.
-- **Tree**: A connected, acyclic undirected graph with a single root node and every other node having exactly one parent. Trees are often used to represent hierarchical structures.
-- **Complete Graph**: A graph in which every pair of distinct vertices is connected by an edge. Complete graphs are useful for modeling fully connected networks.
-- **Bipartite Graph**: A graph in which the vertices can be divided into two disjoint sets, such that every edge connects a vertex from one set to a vertex in the other set. Bipartite graphs are applied in matching problems and network flows.
-- **Weighted Graph**: A graph in which each edge has an associated weight or value. Weighted graphs are used in various optimization and pathfinding algorithms.
+   ```
+         A --> B
+         |     |
+         v     v
+         C --> D
+   ```
 
-### Graph Representation
+2. Tree: A connected, acyclic undirected graph with a single root node and every other node having exactly one parent. Trees represent hierarchical structures.
 
-Graphs can be represented using different data structures:
+   Diagram:
 
-- **Adjacency Matrix**: A two-dimensional matrix that represents a graph using a boolean value or weight at each matrix cell to indicate the presence or absence of an edge between vertices. Adjacency matrices provide fast edge lookup but require more space for
+   ```
+           A
+         / | \
+        B  C  D
+   ```
 
-sparse graphs.
+3. Complete Graph: A graph in which every pair of distinct vertices is connected by an edge. Complete graphs are useful for modeling fully connected networks.
 
-- **Adjacency List**: A collection of lists or arrays where each list represents a vertex, and the elements in the list represent the adjacent vertices. Adjacency lists are memory-efficient for sparse graphs and support efficient traversal.
+   Diagram:
 
-### Graph Traversal
+   ```
+           A ----- B
+         / | \   / | \
+        C  D - E  F - G
+   ```
 
-Graph traversal is the process of visiting all the vertices and edges of a graph. The two most common graph traversal techniques are:
+4. Bipartite Graph: A graph in which the vertices can be divided into two disjoint sets, such that every edge connects a vertex from one set to a vertex in the other set. Bipartite graphs are applied in matching problems and network flows.
 
-- **Depth-First Search (DFS)**: Starts at an initial vertex and explores as far as possible along each branch before backtracking. DFS is often used for exploring connected components, detecting cycles, and finding paths in a graph.
-- **Breadth-First Search (BFS)**: Starts at an initial vertex and explores all the vertices at the current depth level before moving to the next level. BFS is useful for finding the shortest path between two vertices and exploring graphs with uniform edge weights.
+   Diagram:
 
-### Common Use Cases
+   ```
+        Set A       Set B
+         / | \     / | \
+        A1 A2 A3  B1 B2 B3
+   ```
 
-Graphs have a wide range of applications in various fields, including:
+5. Weighted Graph: A graph in which each edge has an associated weight or value. Weighted graphs are used in various optimization and pathfinding algorithms.
 
-- **Social Networks**: Graphs are used to represent social relationships between individuals, allowing for friend suggestions, community detection, and influence analysis.
-- **Routing and Network Analysis**: Graphs are used to model networks, such as road networks or computer networks, and determine the shortest paths between nodes, optimize network flows, or identify network bottlenecks.
-- **Recommendation Systems**: Graphs can be used to represent user-item interactions, enabling personalized recommendations based on similar users or items.
-- **Computer Networks**: Graphs are used to represent network topologies, analyze network connectivity, and optimize data routing.
-- **Logistics and Supply Chain Optimization**: Graphs help model transportation networks and supply chain systems, optimizing routes, and minimizing costs.
-- **Data Clustering**: Graphs are employed in clustering algorithms to discover groups of related data points based on their connections.
-- **Graph-based Algorithms in Machine Learning**: Graphs are used in various machine learning tasks, such as node classification, link prediction, and graph-based semi-supervised learning.
+   Diagram:
 
-### Summary
+   ```
+           A
+         / | \
+        B-3 C-2
+         \ |
+          D-4
+   ```
 
-Graphs provide a flexible and powerful way to represent and analyze relationships between objects. They are used in various applications where relationships and connections play a crucial role. Understanding graphs and their properties allows you to solve complex problems related to network analysis, recommendation systems, social networks, logistics, and much more.
+## Basic Operations on Graphs
+
+1. Adding a Vertex: Adding a new vertex to the graph.
+2. Adding an Edge: Establishing a connection between two vertices by adding an edge.
+3. Removing a Vertex: Removing a vertex and all its associated edges from the graph.
+4. Removing an Edge: Removing the connection between two vertices by removing an edge.
+5. Checking Connectivity: Determining if there is a path between two vertices in the graph.
+6. Traversing the Graph: Visiting all the vertices and edges of the graph using techniques like Depth-First Search (DFS) or Breadth-First Search (BFS).
+
+## Implementation of Graphs
+
+Graphs can be implemented using two common data structures:
+
+1. Adjacency Matrix: A two-dimensional matrix representing the graph's connectivity using boolean values or weights.
+
+```python
+class Graph:
+    def __init__(self, num_vertices):
+        self.num_vertices = num_vertices
+        self.matrix = [[0] * num_vertices for _ in range(num_vertices)]
+
+    def add_edge(self, src, dest):
+        self.matrix[src][dest] = 1
+        self.matrix[dest][src] = 1
+
+    def remove_edge(self, src, dest):
+        self.matrix[src][dest] = 0
+        self.matrix[dest][src] = 0
+
+    def has_edge(self, src, dest):
+        return self.matrix[src][dest] == 1
+
+    def get_neighbors(self, vertex):
+        neighbors = []
+        for i in range(self.num_vertices):
+            if self.matrix[vertex][i] == 1:
+                neighbors.append(i)
+        return neighbors
+```
+
+2. Adjacency List: A collection of lists or arrays where each list represents a vertex and contains the adjacent vertices.
+
+```python
+class Graph:
+    def __init__(self, num_vertices):
+        self.num_vertices = num_vertices
+        self.adj_list = [[] for _ in range(num_vertices)]
+
+    def add_edge(self, src, dest):
+        self.adj_list[src].append(dest)
+        self.adj_list[dest].append(src)
+
+    def remove_edge(self, src, dest):
+        self.adj_list[src].remove(dest)
+        self.adj_list[dest].remove(src)
+
+    def has_edge(self, src, dest):
+        return dest in self.adj_list[src]
+
+    def get_neighbors(self, vertex):
+        return self.adj_list[vertex]
+```
+
+## Usage of Graphs and their Operations
+
+Graphs and their operations have various applications in different domains:
+
+- Social Networks: Analyzing social relationships, suggesting friends, and detecting communities.
+- Routing and Network Analysis: Finding shortest paths, optimizing network flows, and identifying bottlenecks.
+- Recommendation Systems: Providing personalized recommendations based on user-item interactions.
+- Computer Networks: Modeling network topologies, analyzing connectivity, and optimizing data routing.
+- Logistics and Supply Chain Optimization: Optimizing transportation routes and minimizing costs.
+- Data Clustering: Discovering groups of related data points based on their connections.
+- Machine Learning: Utilizing graph-based algorithms for tasks like node classification and link prediction.
+
+### Adding and Removing Edges
+
+```python
+# Using Adjacency Matrix Implementation
+g = Graph(4)
+g.add_edge(0, 1)
+g.add_edge(0, 2)
+g.add_edge(1, 3)
+print(g.matrix)  # [[0, 1, 1, 0], [1, 0, 0, 1], [1, 0, 0, 0], [0, 1, 0, 0]]
+
+g.remove_edge(1, 3)
+print(g.matrix)  # [[0, 1, 1, 0], [1, 0, 0, 0], [1, 0, 0, 0], [0, 0, 0, 0]]
+
+
+# Using Adjacency List Implementation
+g = Graph(4)
+g.add_edge(0, 1)
+g.add_edge(0, 2)
+g.add_edge(1, 3)
+print(g.adj_list)  # [[1, 2], [0, 3], [0], [1]]
+
+g.remove_edge(1, 3)
+print(g.adj_list)  # [[1, 2], [0], [0], []]
+```
+### Checking Connectivity
+
+```python
+# Using Adjacency Matrix Implementation
+g = Graph(4)
+g.add_edge(0, 1)
+g.add_edge(1, 2)
+g.add_edge(2, 3)
+
+print(g.has_edge(0, 1))  # True
+print(g.has_edge(1, 3))  # False
+
+
+# Using Adjacency List Implementation
+g = Graph(4)
+g.add_edge(0, 1)
+g.add_edge(1, 2)
+g.add_edge(2, 3)
+
+print(g.has_edge(0, 1))  # True
+print(g.has_edge(1, 3))  # False
+```
+
+### Getting Neighbors of a Vertex 
+
+```python
+# Using Adjacency Matrix Implementation
+g = Graph(4)
+g.add_edge(0, 1)
+g.add_edge(0, 2)
+g.add_edge(1, 3)
+
+print(g.get_neighbors(0))  # [1, 2]
+print(g.get_neighbors(1))  # [0, 3]
+
+
+# Using Adjacency List Implementation
+g = Graph(4)
+g.add_edge(0, 1)
+g.add_edge(0, 2)
+g.add_edge(1, 3)
+
+print(g.get_neighbors(0))  # [1, 2]
+print(g.get_neighbors(1))  # [0, 3]
+```
+## Advantages of Graphs
+
+- Graphs can efficiently represent complex relationships and dependencies.
+- They allow for flexible modeling of various real-world problems.
+- Graph algorithms provide effective solutions for many computational challenges.
+
+## Disadvantages of Graphs
+
+- Storage and memory requirements can be higher for dense graphs using adjacency matrices.
+- Certain graph algorithms can have high time complexity for large graphs.
+
+- Modifying the structure of a graph can be more complex and time-consuming than other data structures.
+
+## Time and Space Complexity
+
+- The time and space complexity of graph operations depend on the chosen implementation and specific algorithms used. Generally, the time complexity ranges from O(1) to O(V + E), where V is the number of vertices and E is the number of edges.
+
+## Use Cases
+
+- Social network analysis, route planning, recommendation systems, logistics optimization, data clustering, and machine learning tasks are some of the common use cases for graphs.
+
+## Comparison with Other Data Structures
+
+- Graphs are different from linear data structures like arrays and linked lists as they represent non-linear relationships between elements.
+- Graphs offer more flexibility in modeling complex relationships compared to trees, which have a strict hierarchical structure.
+- Graphs can be more memory-intensive than other data structures due to their potentially large number of vertices and edges.
+
+## Summary
+
+Graphs are powerful data structures used to represent relationships and solve a wide range of problems. They come in various types such as directed acyclic graphs, trees, complete graphs, bipartite graphs, and weighted graphs. Graphs can be implemented using adjacency matrices or adjacency lists. They are useful in social networks, routing, recommendation systems, logistics, data clustering, and machine learning. Graph operations involve adding and removing vertices/edges, checking connectivity, and graph traversal using algorithms like DFS and BFS. While graphs have advantages in modeling complex relationships, they can be memory-intensive and have higher time complexity for certain operations.
