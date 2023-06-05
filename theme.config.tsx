@@ -28,7 +28,7 @@ const config: DocsThemeConfig = {
     </span>
   ),
   project: {
-    link: "https://github.com/UmbrellaCrow612/The-Code-Wizard-s-Handbook/tree/main",
+    link: "https://github.com/UmbrellaCrow612/code-handbook/tree/main",
   },
   chat: {
     link: "https://discord.com",
@@ -51,9 +51,9 @@ const config: DocsThemeConfig = {
     toggleButton: true,
   },
   docsRepositoryBase:
-    "https://github.com/UmbrellaCrow612/The-Code-Wizard-s-Handbook/tree/main",
+    "https://github.com/UmbrellaCrow612/code-handbook/tree/main",
   footer: {
-    text: "Software Engineering docs",
+    text: "Code HandBook",
   },
 };
 
