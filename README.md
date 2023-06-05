@@ -85,6 +85,7 @@ redone:
 - Queue: done with format.
 - Hash: done with format.
 - graphs: done with format.
+- Heap: done with format.
 
 
 - Sit down and listen / read each chapter per day or two and see if anything is missing or if there is something that needs to be added
