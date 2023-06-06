@@ -1,38 +1,125 @@
-## Binary Search Tree (BST)
+# Binary Search Tree
 
-A binary search tree (BST) is a binary tree-based data structure that follows a specific property: for every node `n`, all nodes in its left subtree have values less than `n`, and all nodes in its right subtree have values greater than `n`. This property allows for efficient searching, insertion, and deletion operations.
+## Introduction
 
-### Key Features
+A Binary Search Tree (BST) is a type of binary tree in which the nodes are organized in a specific order. In a BST, the left child of a node contains a value less than the node's value, and the right child contains a value greater than the node's value. This ordering property allows for efficient searching, insertion, and deletion operations. BSTs are widely used in computer science and have applications in various domains, including databases, search algorithms, and more.
 
-1. **Binary Tree Structure**: A binary search tree is a binary tree, where each node can have at most two child nodes, referred to as the left child and the right child.
+## Types of Binary Search Trees
 
-2. **Ordering Property**: The ordering property of a BST ensures that the values of nodes in the left subtree are less than the value of the current node, and the values in the right subtree are greater. This property applies recursively to all nodes in the BST.
+1. Balanced Binary Search Tree: A BST in which the height of the left and right subtrees of any node differs by at most one, ensuring optimal performance for search operations.
+   ![Balanced Binary Search Tree](/balanced_binary_search_tree.png)
 
-3. **Unique Key Values**: In a BST, each node has a unique key value. Duplicate keys are not allowed.
+2. Self-Balancing Binary Search Tree: A type of BST that automatically maintains balance during insertions and deletions, such as AVL trees or Red-Black trees.
+   ![Self-Balancing Binary Search Tree](/self_balancing_bst.png)
 
-### BST Operations
+## Basic Operations
 
-1. **Search**: Searching in a BST is performed by comparing the target value with the value of the current node and recursively traversing left or right based on the comparison until the target value is found or a null subtree is reached.
+1. Insertion: Adding a new node with a specific value while maintaining the ordering property of the BST.
+2. Deletion: Removing a node from the BST while maintaining the ordering property and balancing if necessary.
+3. Searching: Finding a specific value or node within the BST using a comparison-based search algorithm.
+4. Traversal: Visiting all the nodes of the BST in a specific order, such as In-order, Pre-order, or Post-order traversal.
 
-2. **Insertion**: Inserting a new node into a BST involves comparing the key value of the new node with the keys of existing nodes and recursively traversing left or right until finding an appropriate position. The new node is then added as a leaf node.
+## Implementation
 
-3. **Deletion**: Deleting a node from a BST requires handling three cases:
-   - If the node to be deleted has no children, it is simply removed from the tree.
-   - If the node has one child, the child is linked to the parent of the node to be deleted.
-   - If the node has two children, it can be replaced by either its in-order predecessor (maximum value in its left subtree) or its in-order successor (minimum value in its right subtree).
+A binary search tree can be implemented using classes and objects in Python. We define a Node class with the value, left child, and right child attributes. The nodes are then connected to form the BST structure.
 
-### BST Advantages and Applications
+```python
+class Node:
+    def __init__(self, value):
+        self.value = value
+        self.left = None
+        self.right = None
 
-1. **Efficient Searching**: The BST property allows for efficient searching operations, as the search space is reduced by half at each step. On
+class BinarySearchTree:
+    def __init__(self):
+        self.root = None
 
-average, the time complexity for search, insertion, and deletion is O(log n), making BSTs suitable for large datasets.
+    def insert(self, value):
+        if self.root is None:
+            self.root = Node(value)
+        else:
+            self._insert_recursive(value, self.root)
 
-2. **Ordered Data Storage**: BSTs are useful for storing data in a sorted order, making it easier to perform range queries or traverse the data in ascending or descending order.
+    def _insert_recursive(self, value, current_node):
+        if value < current_node.value:
+            if current_node.left is None:
+                current_node.left = Node(value)
+            else:
+                self._insert_recursive(value, current_node.left)
+        else:
+            if current_node.right is None:
+                current_node.right = Node(value)
+            else:
+                self._insert_recursive(value, current_node.right)
 
-3. **Efficient Insertion and Deletion**: BSTs support efficient insertion and deletion operations while maintaining the ordering property. Although BSTs can become unbalanced, leading to worst-case time complexity of O(n), balanced BSTs like AVL trees or Red-Black trees can be used to maintain logarithmic time complexity for all operations.
+    def search(self, value):
+        return self._search_recursive(value, self.root)
 
-4. **Applications**: BSTs find applications in various areas, including database systems, symbol tables in compilers, interval trees for efficient range queries, and self-balancing BSTs used in indexing and searching algorithms.
+    def _search_recursive(self, value, current_node):
+        if current_node is None or current_node.value == value:
+            return current_node
+        elif value < current_node.value:
+            return self._search_recursive(value, current_node.left)
+        else:
+            return self._search_recursive(value, current_node.right)
+```
 
-### Summary
+## Usage
 
-Binary search trees (BSTs) provide an efficient way to store and manage ordered data. With their key features, such as the ordering property and unique key values, BSTs enable efficient searching, insertion, and deletion operations. The logarithmic time complexity of BST operations makes them suitable for large datasets, and self-balancing BST variants ensure performance guarantees. Understanding BSTs is crucial for designing efficient algorithms and data structures that involve sorted data storage, retrieval, and manipulation in various domains of computer science.
+Binary search trees find applications in various scenarios, including:
+
+- Efficient searching and retrieval of data in databases and search algorithms.
+- Implementing symbol tables and dictionaries in programming languages.
+- Storing and organizing data in a sorted manner.
+
+```python
+# Create a Binary Search Tree instance
+bst = BinarySearchTree()
+
+# Insert nodes into the BST
+bst.insert(5)
+bst.insert(3)
+bst.insert(7)
+bst.insert(2)
+bst.insert(4)
+bst.insert(6)
+bst.insert(8)
+
+# Search for a value in the BST
+result = bst.search(4)
+if result is not None:
+    print("Value found in the Binary Search Tree!")
+else:
+    print("Value not found in the Binary Search Tree.")
+```
+
+## Advantages
+
+1. Efficient Searching: Binary search trees offer efficient searching operations, with an average time complexity of O(log n) for balanced trees.
+2. Sorted Data: The ordering property of BSTs ensures that the elements are always sorted, making it easier to perform range queries or find the minimum/maximum values.
+3. Dynamic Structure: BSTs can dynamically grow or shrink based on the number of elements, allowing for flexible data storage.
+
+## Disadvantages
+
+1. Lack of Balance: If a binary search tree becomes unbalanced, it may lead to performance degradation and inefficient operations.
+2. Complex Operations: Maintaining balance during insertions and deletions can be complex and time-consuming, especially in self-balancing BSTs.
+
+## Time and Space Complexity
+
+- Average time complexity for searching, insertion, and deletion: O(log n) for balanced BSTs, O(n) for unbalanced BSTs in the worst case.
+- Space complexity: O(n) to store n nodes in the BST.
+
+## Use Cases
+
+- Implementing efficient search algorithms like binary search.
+- Storing and retrieving data in databases or key-value stores.
+- Constructing sorted dictionaries or symbol tables.
+
+## Comparison with Other Data Structures
+
+- Binary Search Tree vs. Array: BSTs allow efficient searching and dynamic insertion/deletion, whereas arrays provide constant time access but require pre-allocated space.
+- Binary Search Tree vs. Hash Table: BSTs maintain sorted data and perform range queries efficiently, while hash tables offer constant-time access but do not guarantee ordering.
+
+## Summary:
+
+Binary Search Trees (BSTs) are binary trees organized in a specific order that allows for efficient searching, insertion, and deletion operations. They are used in various applications, including search algorithms, databases, and sorted data storage. However, maintaining balance in BSTs can be challenging, and unbalanced trees may lead to performance issues. Self-balancing BSTs mitigate this problem by automatically maintaining balance during operations.
