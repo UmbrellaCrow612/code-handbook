@@ -1,10 +1,10 @@
-## Queues
+# Queues
 
-### Introduction
+## Introduction
 
 A queue is a widely used data structure that follows the First-In-First-Out (FIFO) principle. It represents a collection of elements where the first element added is the first one to be removed. Think of it as a line of people waiting for a bus, where the person who arrives first is the first one to board.
 
-### Types Of Queues
+## Types Of Queues
 
 There are two common implementations of queues:
 
@@ -20,7 +20,7 @@ There are two common implementations of queues:
 
 ![](/linked_list_queue.webp)
 
-### Basic Operations
+## Basic Operations
 
 The following operations can be performed on a queue:
 
@@ -30,9 +30,9 @@ The following operations can be performed on a queue:
 - **IsEmpty**: Checking if the queue is empty.
 - **Size**: Determining the number of elements in the queue.
 
-### Implementation
+## Implementation
 
-#### Array-based Queue
+### Array-based Queue
 
 To implement an array-based queue:
 
@@ -74,7 +74,7 @@ class ArrayQueue:
         return self.rear - self.front
 ```
 
-#### Linked List-based Queue
+### Linked List-based Queue
 
 To implement a linked list-based queue:
 
@@ -134,7 +134,7 @@ class LinkedListQueue:
         return count
 ```
 
-### Usage
+## Usage
 
 Queues are commonly used in various algorithms and programming scenarios, including:
 
@@ -143,35 +143,35 @@ Queues are commonly used in various algorithms and programming scenarios, includ
 - **Buffering**: Queues are used to buffer data between processes or entities.
 - **Printing and Spooling**: Queues can manage print jobs or spool data for processing.
 
-### Advantages
+## Advantages
 
 - Queues provide an efficient way to manage elements in a specific order.
 - They are suitable for handling data in a sequential manner.
 - Queues are easy to implement and understand.
 - They have a predictable behavior that follows the FIFO principle.
 
-### Disadvantages
+## Disadvantages
 
 - Queues have a fixed capacity in the array-based implementation, which can lead to overflow or underflow if not handled properly.
 - Array-based queues may require shifting elements when the array becomes full or implementing a circular array approach.
 - Linked list-based queues use additional memory for node references.
 
-### Time and Space Complexity
+## Time and Space Complexity
 
 - Enqueue, dequeue, peek, isEmpty, and size operations in both array-based and linked list-based queues have a time complexity of O(1).
 - The space complexity of both implementations is O(n), where n is the number of elements in the queue.
 
-### Use Cases
+## Use Cases
 
 - Queues are suitable for scenarios that require handling elements in the order of their arrival.
 - They are used in various algorithms like BFS, job scheduling, buffering, and printing/spooling.
 
-### Comparison with Other Data Structures
+## Comparison with Other Data Structures
 
 - Queues are similar to stacks in terms of the underlying principle (FIFO vs. LIFO), but their behavior and use cases differ.
 - Queues are distinct from arrays and linked lists, which are general-purpose data structures.
 - Priority queues prioritize elements based on their associated priority, unlike regular queues that follow the FIFO principle.
 
-### Summary
+## Summary
 
 Queues are a fundamental data structure that follows the First-In-First-Out (FIFO) principle. They provide an efficient way to manage elements in a specific order and are widely used in various algorithms and programming scenarios. Understanding queues and their operations allows you to handle data in a sequential manner and solve a wide range of problems effectively.

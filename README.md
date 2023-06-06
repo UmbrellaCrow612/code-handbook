@@ -65,11 +65,14 @@ file-name
 
 - Rename / change the questions and answers to use number bullet points.
 
+
+
 Done:
 
 - Fundamentals: name checked, ordered them, renamed folder - fundamentals - data structures.
 - Fundamentals: rewrite with new format.
 - Data Structures: rewrite with new format.
+- Data Structures: markdown is correct order `# ##`
 
 Later to do:
 

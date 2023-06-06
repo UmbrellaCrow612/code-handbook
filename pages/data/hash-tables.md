@@ -1,10 +1,10 @@
-## Hash Tables
+# Hash Tables
 
-### Introduction
+## Introduction
 
 Hash tables, also known as hash maps, are efficient data structures that allow for the insertion, deletion, and retrieval of key-value pairs. They are widely used in various applications due to their constant-time average case operations.
 
-### Types and Diagrams
+## Types and Diagrams
 
 There is one primary type of hash table structure, which consists of an array (hash table or bucket array) and a hash function. The array is divided into fixed-size slots or buckets. Here's a diagram illustrating a hash table structure:
 
@@ -13,7 +13,7 @@ There is one primary type of hash table structure, which consists of an array (h
  |      |      |      |      |      |      |      |      |
 ```
 
-### Basic Operations
+## Basic Operations
 
 Hash tables support the following basic operations:
 
@@ -21,7 +21,7 @@ Hash tables support the following basic operations:
 - **Deletion**: Removing a key-value pair from the hash table.
 - **Lookup**: Retrieving the value associated with a given key.
 
-### Implementation
+## Implementation
 
 To build a hash table, you need to follow these steps:
 
@@ -56,7 +56,7 @@ else:
     print("Key does not exist")  # Output: Key does not exist
 ```
 
-### Usage and Operations
+## Usage and Operations
 
 Hash tables are commonly used in the following scenarios:
 
@@ -95,36 +95,36 @@ if student_id in student_table:
 del student_table[103]
 ```
 
-### Advantages
+## Advantages
 
 - Hash tables provide constant-time average case operations for insertion, deletion, and lookup.
 - They are efficient for handling large amounts of data and offer excellent performance.
 - Hash tables offer flexibility in terms of key-value pair associations.
 
-### Disadvantages
+## Disadvantages
 
 - Hash tables have additional memory overhead due to the need for an array and collision resolution mechanisms.
 - In rare cases, hash functions may produce collisions, impacting performance.
 - Hash table operations may have worst-case time complexity if collisions are not handled well.
 
-### Time and Space Complexity
+## Time and Space Complexity
 
 The time complexity of hash table operations (insertion, deletion, lookup) is typically O(1) on average. However, in the worst case, it can be O(n), where n is the number of key-value pairs in the hash table. The space complexity is O(n), considering the storage required for the key-value pairs.
 
-### Use Cases
+## Use Cases
 
 - Caching frequently accessed data to optimize performance.
 - Indexing and retrieval in database systems.
 - Implementing symbol tables in programming languages.
 - Hash-based algorithms requiring constant-time operations.
 
-### Comparison with Other Data Structures
+## Comparison with Other Data Structures
 
 - Hash tables provide constant-time average case operations, whereas other data structures like arrays or linked lists have varying time complexities.
 - They are more efficient than linear search structures when it comes to key-based retrieval.
 - Hash tables have a higher memory overhead compared to other data structures due to the need for an array.
 
-### Summary
+## Summary
 
 Hash tables are powerful data structures that offer efficient operations for inserting, deleting, and
 retrieving key-value pairs. They utilize a hash function and collision resolution strategies to ensure fast access and storage. Hash tables find applications in caching, databases, symbol tables, and hash-based algorithms. Understanding hash tables and their underlying concepts allows for effective organization and retrieval of data based on keys, making them valuable tools for solving various problems.
