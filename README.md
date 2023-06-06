@@ -61,41 +61,18 @@ file-name
 
 # Todo
 
-data structures:
+- Fundamentals:
 
-new form for learning materials:
-
-- Intro
-- Types of the data structure with diagrams
-- Basic Operations that can be performed on the data structure
-- Implementation how to build the data structure
-- Usage, using the data structure and its operations
-- Advantages
-- Disadvantages
-- Time and space complexity
-- Use cases
-- comparison with other data structures
-- summary
-
-redone:
-
-- Array: new format from above.
-- Stack: new format from above.
-- linked list: done with format.
-- Queue: done with format.
-- Hash: done with format.
-- graphs: done with format.
-- Heap: done with format.
-- Trie: done with format.
-- Binary Tree: done with format.
-- bst: done with format.
-
-
-- Sit down and listen / read each chapter per day or two and see if anything is missing or if there is something that needs to be added
+- Rename / change the questions and answers to use number bullet points.
 
 Done:
 
-- Fundamentals: name checked, ordered them, renamed folder
+- Fundamentals: name checked, ordered them, renamed folder - fundamentals - data structures.
 - Fundamentals: rewrite with new format.
+- Data Structures: rewrite with new format.
+
+Later to do:
+
+Sit done and listen / proof read all of it.
 
 Fact check each file and make sure they are consistent
