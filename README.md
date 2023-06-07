@@ -61,15 +61,7 @@ file-name
 
 # Todo
 
-Algorithms structure:
 
-- Introduction
-- Explanation
-- Implementation code and how the algorithm works step-by-step.
-- Use Cases
-- Time and Space Complexity
-- Variants or Extensions
-- Summary
 
 Done:
 
