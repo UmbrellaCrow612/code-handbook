@@ -1,3 +1,15 @@
 {
-  "index": "Introduction"
+  "index": "Introduction",
+  "binary-search": "",
+  "bubble-sort": "",
+  "merge-sort": "",
+  "quick-sort": "",
+  "depth-first-search": "",
+  "breadth-first-search": "",
+  "dijkstra's-algorithm": "",
+  "dynamic-programming": "",
+  "knapsack-problem": "",
+  "prim's-algorithm": "",
+  "k-means-clustering": "",
+  "a*-search-algorithm": ""
 }

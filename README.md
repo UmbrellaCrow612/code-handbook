@@ -61,10 +61,15 @@ file-name
 
 # Todo
 
-- Fundamentals:
+Algorithms structure:
 
-
-
+- Introduction
+- Explanation
+- Implementation code and how the algorithm works step-by-step.
+- Use Cases
+- Time and Space Complexity
+- Variants or Extensions
+- Summary
 
 Done:
 
@@ -73,6 +78,7 @@ Done:
 - Data Structures: rewrite with new format.
 - Data Structures: markdown is correct order `# ##`
 - Renamed all questions and answers to use number points.
+- Algorithms: added algorithms and in format.
 
 Later to do:
 
