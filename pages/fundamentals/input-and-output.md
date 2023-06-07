@@ -196,13 +196,13 @@ During I/O operations, various errors can occur. Let's modify the previous examp
 
 ## Questions
 
-- What are the key methods for receiving user input in programming, and can you provide an example in your preferred programming language?
+1. What are the key methods for receiving user input in programming, and can you provide an example in your preferred programming language?
 
-- How can error handling be incorporated into input and output operations, and why is it important to handle potential errors gracefully?
+2. How can error handling be incorporated into input and output operations, and why is it important to handle potential errors gracefully?
 
-- Could you explain the concept of buffering in I/O operations and how it can improve performance? Provide an example scenario where buffering would be beneficial.
+3. Could you explain the concept of buffering in I/O operations and how it can improve performance? Provide an example scenario where buffering would be beneficial.
 
-- In what ways can programs perform output operations to display information or send data to external destinations? Provide examples in different programming languages to illustrate the different methods of outputting data.
+4. In what ways can programs perform output operations to display information or send data to external destinations? Provide examples in different programming languages to illustrate the different methods of outputting data.
 
 ## Conclusion
 
@@ -220,33 +220,30 @@ By mastering I/O operations and considering these key points, developers can bui
 
 ### Answers
 
-Sure! Here are the answers to the questions:
+1. The key methods for receiving user input in programming include:
 
-- The key methods for receiving user input in programming include:
+- In Python, you can use the `input()` function. Example: `name = input("Enter your name: ")`
+- In Java, you can use the `Scanner` class. Example:
 
-  - In Python, you can use the `input()` function. Example: `name = input("Enter your name: ")`
-  - In Java, you can use the `Scanner` class. Example:
-
-  ```java
-  Scanner scanner = new Scanner(System.in);
-  System.out.print("Enter your name: ");
-  String name = scanner.nextLine();
-  ```
+```java
+Scanner scanner = new Scanner(System.in);
+System.out.print("Enter your name: ");
+String name = scanner.nextLine();
+```
 
 ---
 
-- Error handling is important in I/O operations to gracefully handle potential errors and provide appropriate feedback to the user. It helps prevent crashes and unexpected program behavior. By using try-catch blocks or error-checking mechanisms, you can anticipate and handle exceptions that may occur during I/O operations.
+2. Error handling is important in I/O operations to gracefully handle potential errors and provide appropriate feedback to the user. It helps prevent crashes and unexpected program behavior. By using try-catch blocks or error-checking mechanisms, you can anticipate and handle exceptions that may occur during I/O operations.
 
 ---
 
-- Buffering in I/O operations involves storing data in memory before writing it to an external destination or reading it from an external source. This reduces the number of actual I/O operations, improving efficiency and performance. For example, when writing to a file, buffering collects a certain amount of data in memory before writing it all at once, reducing the frequency of disk writes.
+3. Buffering in I/O operations involves storing data in memory before writing it to an external destination or reading it from an external source. This reduces the number of actual I/O operations, improving efficiency and performance. For example, when writing to a file, buffering collects a certain amount of data in memory before writing it all at once, reducing the frequency of disk writes.
 
 ---
 
-- Programs can perform output operations in various ways:
-  - In C++, you can use `std::cout` to print output to the console. Example: `std::cout << "Hello, world!" << std::endl;`
-  - In Python, you can use the `print()` function to display information. Example: `print("Hello, world!")`
-  - In Java, you can use `System.out.println()` to print output to the console. Example: `System.out.println("Hello, world!");`
-  - In JavaScript, you can use `console.log()` to output to the console. Example: `console.log("Hello, world!");`
+4. Programs can perform output operations in various ways:
 
-These answers should help improve understanding of the material and provide clarity on the key concepts discussed.
+- In C++, you can use `std::cout` to print output to the console. Example: `std::cout << "Hello, world!" << std::endl;`
+- In Python, you can use the `print()` function to display information. Example: `print("Hello, world!")`
+- In Java, you can use `System.out.println()` to print output to the console. Example: `System.out.println("Hello, world!");`
+- In JavaScript, you can use `console.log()` to output to the console. Example: `console.log("Hello, world!");`

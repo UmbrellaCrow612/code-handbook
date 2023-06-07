@@ -108,13 +108,13 @@ assert multiply(-2, 6) == -12
 
 ## Questions
 
-- What are some advantages of using print statements as a debugging technique? Provide an example where adding print statements helped identify and resolve a bug in the code.
+1. What are some advantages of using print statements as a debugging technique? Provide an example where adding print statements helped identify and resolve a bug in the code.
 
-- How can debuggers aid in the debugging process? Explain the steps involved in using a debugger to locate and fix a bug in your code.
+2. How can debuggers aid in the debugging process? Explain the steps involved in using a debugger to locate and fix a bug in your code.
 
-- Describe the benefits of logging in the debugging process. Give an example scenario where strategically placed log statements helped in analyzing program behavior and identifying errors.
+3. Describe the benefits of logging in the debugging process. Give an example scenario where strategically placed log statements helped in analyzing program behavior and identifying errors.
 
-- How does test-driven development (TDD) promote code reliability and maintainability? Walk through the TDD development cycle and explain the significance of each step in ensuring high-quality software.
+4. How does test-driven development (TDD) promote code reliability and maintainability? Walk through the TDD development cycle and explain the significance of each step in ensuring high-quality software.
 
 ## Conclusion
 
@@ -122,29 +122,29 @@ Debugging and testing are vital processes in software development that ensure co
 
 ### Answers
 
-- One advantage of using print statements as a debugging technique is its simplicity and ease of implementation. By adding print statements at specific points in the code, you can observe the values of variables, execution flow, and intermediate results. This helps in understanding the program's behavior and identifying the cause of unexpected issues. For example, suppose you have a function that calculates the average of a list of numbers but it is producing incorrect results. By adding print statements to display the list and the calculated sum, you can pinpoint where the issue lies and fix it.
+1. One advantage of using print statements as a debugging technique is its simplicity and ease of implementation. By adding print statements at specific points in the code, you can observe the values of variables, execution flow, and intermediate results. This helps in understanding the program's behavior and identifying the cause of unexpected issues. For example, suppose you have a function that calculates the average of a list of numbers but it is producing incorrect results. By adding print statements to display the list and the calculated sum, you can pinpoint where the issue lies and fix it.
 
 ---
 
-- Debuggers aid in the debugging process by providing a more detailed and interactive approach to analyzing program behavior. The steps involved in using a debugger to locate and fix a bug are as follows:
+2. Debuggers aid in the debugging process by providing a more detailed and interactive approach to analyzing program behavior. The steps involved in using a debugger to locate and fix a bug are as follows:
 
-  - Set a breakpoint at a specific line in the code where you suspect the bug might exist.
-  - Run the program in debugging mode.
-  - When the breakpoint is reached, the program execution pauses, allowing you to inspect the current state of variables and data.
-  - Step through the code line by line to observe the changes in variables and identify any unexpected behavior.
-  - Use the debugger's features, such as variable watches and call stack inspection, to gain insights into the program flow.
-  - By analyzing the program behavior using the debugger, you can locate the bug and make the necessary code modifications to fix it.
-
----
-
-- Logging has several benefits in the debugging process. It helps in analyzing program behavior, identifying errors, and tracing the execution flow. A scenario where logging proves valuable is in a complex system where multiple components interact. By placing log statements strategically throughout the codebase, you can track the flow of execution and record important information. For example, in a web application, logging can capture HTTP requests and responses, database queries, and errors. By examining the logs, you can identify the sequence of events leading to an error, understand the input data, and trace the execution path. This information aids in debugging and resolving issues efficiently.
+- Set a breakpoint at a specific line in the code where you suspect the bug might exist.
+- Run the program in debugging mode.
+- When the breakpoint is reached, the program execution pauses, allowing you to inspect the current state of variables and data.
+- Step through the code line by line to observe the changes in variables and identify any unexpected behavior.
+- Use the debugger's features, such as variable watches and call stack inspection, to gain insights into the program flow.
+- By analyzing the program behavior using the debugger, you can locate the bug and make the necessary code modifications to fix it.
 
 ---
 
-- Test-driven development (TDD) promotes code reliability and maintainability through its systematic and incremental approach. The TDD development cycle consists of the following steps:
+3. Logging has several benefits in the debugging process. It helps in analyzing program behavior, identifying errors, and tracing the execution flow. A scenario where logging proves valuable is in a complex system where multiple components interact. By placing log statements strategically throughout the codebase, you can track the flow of execution and record important information. For example, in a web application, logging can capture HTTP requests and responses, database queries, and errors. By examining the logs, you can identify the sequence of events leading to an error, understand the input data, and trace the execution path. This information aids in debugging and resolving issues efficiently.
 
-  - Write a failing test: Before writing any production code, a test that describes the desired behavior is written. This test should fail initially as the corresponding code hasn't been implemented yet.
-  - Write the minimum code required to pass the test: Only enough code is written to make the failing test pass. This approach ensures that code is developed to meet specific requirements and avoids unnecessary complexity.
-  - Refactor the code: Once the test passes, the code can be refactored to improve its design, readability, and performance. The refactoring step ensures that the code remains clean, maintainable, and adheres to good coding practices.
+---
 
-  By following the TDD approach, developers are encouraged to write focused, isolated tests that cover various scenarios. This leads to improved code quality, as bugs and issues are identified early during the development process. Additionally, the incremental nature of TDD helps maintain code integrity, as new features or modifications can be confidently made without breaking existing functionality, thanks to the existing test suite.
+4. Test-driven development (TDD) promotes code reliability and maintainability through its systematic and incremental approach. The TDD development cycle consists of the following steps:
+
+- Write a failing test: Before writing any production code, a test that describes the desired behavior is written. This test should fail initially as the corresponding code hasn't been implemented yet.
+- Write the minimum code required to pass the test: Only enough code is written to make the failing test pass. This approach ensures that code is developed to meet specific requirements and avoids unnecessary complexity.
+- Refactor the code: Once the test passes, the code can be refactored to improve its design, readability, and performance. The refactoring step ensures that the code remains clean, maintainable, and adheres to good coding practices.
+
+By following the TDD approach, developers are encouraged to write focused, isolated tests that cover various scenarios. This leads to improved code quality, as bugs and issues are identified early during the development process. Additionally, the incremental nature of TDD helps maintain code integrity, as new features or modifications can be confidently made without breaking existing functionality, thanks to the existing test suite.

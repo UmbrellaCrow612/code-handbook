@@ -127,10 +127,10 @@ def bfs(graph, start):
 
 ## Questions
 
-- What is the time complexity of the Quicksort algorithm in the average case, and how does it compare to the worst case? Explain why the worst-case scenario occurs and how it can be mitigated.
-- How does recursion work in the context of solving repetitive problems? Provide an example of a problem that can be solved using recursion and explain the base case and recursive calls involved in its solution.
-- Compare and contrast Depth-First Search (DFS) and Breadth-First Search (BFS) algorithms. Explain the traversal order and use cases for each algorithm. Provide an example scenario where one algorithm would be more suitable than the other.
-- Compare Bubble Sort and Insertion Sort in terms of their time complexity and efficiency. Discuss the best-case and worst-case scenarios for each algorithm and explain when it would be appropriate to use one over the other.
+1. What is the time complexity of the Quicksort algorithm in the average case, and how does it compare to the worst case? Explain why the worst-case scenario occurs and how it can be mitigated.
+2. How does recursion work in the context of solving repetitive problems? Provide an example of a problem that can be solved using recursion and explain the base case and recursive calls involved in its solution.
+3. Compare and contrast Depth-First Search (DFS) and Breadth-First Search (BFS) algorithms. Explain the traversal order and use cases for each algorithm. Provide an example scenario where one algorithm would be more suitable than the other.
+4. Compare Bubble Sort and Insertion Sort in terms of their time complexity and efficiency. Discuss the best-case and worst-case scenarios for each algorithm and explain when it would be appropriate to use one over the other.
 
 ## Conclusion
 
@@ -138,16 +138,16 @@ Algorithms form the core of problem-solving in computer science. Searching and s
 
 ### Answers
 
-- The Quicksort algorithm has an average time complexity of O(n log n), where n represents the number of elements to be sorted. However, in the worst-case scenario, when the pivot selection is unbalanced (e.g., selecting the smallest or largest element as the pivot), the time complexity can degrade to O(n^2). This occurs when the partition step consistently divides the array into subarrays of unequal sizes. To mitigate this issue, randomized pivot selection or using a median-of-three pivot selection strategy can help ensure a more balanced partition.
+1. The Quicksort algorithm has an average time complexity of O(n log n), where n represents the number of elements to be sorted. However, in the worst-case scenario, when the pivot selection is unbalanced (e.g., selecting the smallest or largest element as the pivot), the time complexity can degrade to O(n^2). This occurs when the partition step consistently divides the array into subarrays of unequal sizes. To mitigate this issue, randomized pivot selection or using a median-of-three pivot selection strategy can help ensure a more balanced partition.
 
 ---
 
-- Recursion is a programming technique where a function calls itself to solve a problem by breaking it down into smaller, similar subproblems. It involves two key components: the base case and the recursive call. The base case acts as the termination condition, defining when the recursion should stop. The recursive call is where the function calls itself with smaller instances of the problem until the base case is reached. For example, in calculating the factorial of a number, the base case is typically defined as factorial(0) = 1, and the recursive call is factorial(n) = n \* factorial(n-1), where n is a positive integer.
+2. Recursion is a programming technique where a function calls itself to solve a problem by breaking it down into smaller, similar subproblems. It involves two key components: the base case and the recursive call. The base case acts as the termination condition, defining when the recursion should stop. The recursive call is where the function calls itself with smaller instances of the problem until the base case is reached. For example, in calculating the factorial of a number, the base case is typically defined as factorial(0) = 1, and the recursive call is factorial(n) = n \* factorial(n-1), where n is a positive integer.
 
 ---
 
-- Depth-First Search (DFS) and Breadth-First Search (BFS) are both graph traversal algorithms, but they differ in the order in which they visit nodes. DFS explores as far as possible along each branch before backtracking, visiting nodes in depth-first order. On the other hand, BFS visits nodes in levels, exploring all the neighbors of a node before moving to the next level. DFS is often suitable for tasks like maze solving, topological sorting, and connected component detection, while BFS is commonly used for shortest path finding, social network analysis, and graph connectivity.
+3. Depth-First Search (DFS) and Breadth-First Search (BFS) are both graph traversal algorithms, but they differ in the order in which they visit nodes. DFS explores as far as possible along each branch before backtracking, visiting nodes in depth-first order. On the other hand, BFS visits nodes in levels, exploring all the neighbors of a node before moving to the next level. DFS is often suitable for tasks like maze solving, topological sorting, and connected component detection, while BFS is commonly used for shortest path finding, social network analysis, and graph connectivity.
 
 ---
 
-- Bubble Sort and Insertion Sort are both simple sorting algorithms, but they have different time complexities and efficiencies. Bubble Sort has a time complexity of O(n^2) in the worst case, making it inefficient for large datasets. Insertion Sort also has a time complexity of O(n^2), but it performs well on small or partially sorted lists. Insertion Sort works by building the final sorted list one element at a time, comparing each element with the already sorted portion and inserting it at the appropriate position. Bubble Sort, on the other hand, repeatedly compares adjacent elements and swaps them if they are in the wrong order. In general, Insertion Sort is preferred over Bubble Sort when efficiency is a concern, especially for smaller or partially sorted lists.
+4. Bubble Sort and Insertion Sort are both simple sorting algorithms, but they have different time complexities and efficiencies. Bubble Sort has a time complexity of O(n^2) in the worst case, making it inefficient for large datasets. Insertion Sort also has a time complexity of O(n^2), but it performs well on small or partially sorted lists. Insertion Sort works by building the final sorted list one element at a time, comparing each element with the already sorted portion and inserting it at the appropriate position. Bubble Sort, on the other hand, repeatedly compares adjacent elements and swaps them if they are in the wrong order. In general, Insertion Sort is preferred over Bubble Sort when efficiency is a concern, especially for smaller or partially sorted lists.

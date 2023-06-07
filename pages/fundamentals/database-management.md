@@ -51,13 +51,13 @@ Understanding database connections and SQL querying enables developers to effect
 
 ## Questions
 
-- Explain the purpose of normalization in database design. How does it help eliminate data redundancy and maintain data integrity?
+1. Explain the purpose of normalization in database design. How does it help eliminate data redundancy and maintain data integrity?
 
-- Describe the difference between a primary key and a foreign key in a relational database. How do they establish relationships between tables?
+2. Describe the difference between a primary key and a foreign key in a relational database. How do they establish relationships between tables?
 
-- Walk through the steps involved in performing a CRUD operation on a database. Provide an example scenario for each operation (Create, Read, Update, Delete).
+3. Walk through the steps involved in performing a CRUD operation on a database. Provide an example scenario for each operation (Create, Read, Update, Delete).
 
-- Discuss the advantages of using a relational database over other types of databases. What are some key features of relational databases that make them suitable for managing complex data?
+4. Discuss the advantages of using a relational database over other types of databases. What are some key features of relational databases that make them suitable for managing complex data?
 
 ## Conclusion
 
@@ -65,22 +65,23 @@ By understanding relational databases, CRUD operations, database design and norm
 
 ### Answers
 
-- The purpose of normalization in database design is to organize data efficiently and maintain data integrity by eliminating data redundancy. It involves breaking down a database into separate tables and applying normalization rules to ensure each table serves a single purpose. By doing so, data redundancy is reduced, as information is stored in only one place, minimizing inconsistencies and update anomalies. Normalization also helps maintain data integrity by enforcing data dependencies and reducing the likelihood of data inconsistencies.
+1. The purpose of normalization in database design is to organize data efficiently and maintain data integrity by eliminating data redundancy. It involves breaking down a database into separate tables and applying normalization rules to ensure each table serves a single purpose. By doing so, data redundancy is reduced, as information is stored in only one place, minimizing inconsistencies and update anomalies. Normalization also helps maintain data integrity by enforcing data dependencies and reducing the likelihood of data inconsistencies.
 
 ---
 
-- In a relational database, a primary key is a unique identifier for each record in a table. It ensures that each record is uniquely identifiable and serves as a reference for establishing relationships with records in other tables. On the other hand, a foreign key is a field in a table that refers to the primary key of another table. It establishes relationships between tables by creating a link between the primary key of one table (referred to as the foreign key in the other table) and the related records in the referenced table. This allows for the creation of one-to-one, one-to-many, or many-to-many relationships between tables.
+2. In a relational database, a primary key is a unique identifier for each record in a table. It ensures that each record is uniquely identifiable and serves as a reference for establishing relationships with records in other tables. On the other hand, a foreign key is a field in a table that refers to the primary key of another table. It establishes relationships between tables by creating a link between the primary key of one table (referred to as the foreign key in the other table) and the related records in the referenced table. This allows for the creation of one-to-one, one-to-many, or many-to-many relationships between tables.
 
 ---
 
-- Create: To create a new record in a database, you would typically execute an SQL INSERT statement, specifying the table and the values for each field. For example, to create a new user in a "users" table, you could use: `INSERT INTO users (name, email) VALUES ('John Doe', 'john@example.com')`.
+3. Create: To create a new record in a database, you would typically execute an SQL INSERT statement, specifying the table and the values for each field. For example, to create a new user in a "users" table, you could use: `INSERT INTO users (name, email) VALUES ('John Doe', 'john@example.com')`.
+
 - Read: To retrieve data from a database, you would use an SQL SELECT statement. For example, to retrieve all users from the "users" table, you could use: `SELECT * FROM users`.
 - Update: To update an existing record in a database, you would use an SQL UPDATE statement, specifying the table, the fields to be updated, and the new values. For example, to update the email address of a user with the ID 1 in the "users" table, you could use: `UPDATE users SET email = 'newemail@example.com' WHERE id = 1`.
 - Delete: To delete a record from a database, you would use an SQL DELETE statement, specifying the table and the conditions for deletion. For example, to delete a user with the ID 1 from the "users" table, you could use: `DELETE FROM users WHERE id = 1`.
 
 ---
 
-Relational databases offer several advantages over other types of databases:
+4. Relational databases offer several advantages over other types of databases:
 
 - Structured Data Organization: Relational databases organize data into structured tables, allowing for efficient storage, retrieval, and manipulation of data.
 - Data Integrity: Relational databases enforce integrity constraints, such as primary keys, foreign keys, and data validation rules, to maintain data consistency and accuracy.

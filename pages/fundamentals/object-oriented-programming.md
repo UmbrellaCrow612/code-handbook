@@ -48,15 +48,13 @@ While Object-Oriented Programming has many benefits, it also has some potential 
 
 ## Questions
 
-- How does encapsulation contribute to the principle of information hiding in Object-Oriented Programming? Provide an example to illustrate its benefits.
+1. How does encapsulation contribute to the principle of information hiding in Object-Oriented Programming? Provide an example to illustrate its benefits.
 
-- Can you explain the concept of method overriding in inheritance? How does it allow for the implementation of polymorphism in OOP?
+2. Can you explain the concept of method overriding in inheritance? How does it allow for the implementation of polymorphism in OOP?
 
-- What are the differences between abstract classes and interfaces in OOP? When would you choose to use one over the other?
+3. What are the differences between abstract classes and interfaces in OOP? When would you choose to use one over the other?
 
-- How does composition differ from inheritance in terms of code reuse and flexibility? Provide an example scenario where composition would be a better design choice than inheritance.
-
-Feel free to ask any additional questions or seek further clarification on any OOP concept.
+4. How does composition differ from inheritance in terms of code reuse and flexibility? Provide an example scenario where composition would be a better design choice than inheritance.
 
 ## Conclusion
 
@@ -64,25 +62,25 @@ Object-Oriented Programming (OOP) provides a powerful and flexible approach to d
 
 ### Answers
 
-- Encapsulation contributes to the principle of information hiding in Object-Oriented Programming by bundling data and methods together within a class. It hides the internal implementation details of an object and exposes only the necessary information through defined methods (getters and setters). Encapsulation provides data protection and ensures that the object's state can be accessed and modified only through controlled interfaces. For example, consider a class called `BankAccount` with private variables for `accountNumber` and `balance`. By encapsulating these variables and providing public methods like `getAccountNumber()` and `deposit()`, we can control access to the account details while maintaining data integrity.
+1. Encapsulation contributes to the principle of information hiding in Object-Oriented Programming by bundling data and methods together within a class. It hides the internal implementation details of an object and exposes only the necessary information through defined methods (getters and setters). Encapsulation provides data protection and ensures that the object's state can be accessed and modified only through controlled interfaces. For example, consider a class called `BankAccount` with private variables for `accountNumber` and `balance`. By encapsulating these variables and providing public methods like `getAccountNumber()` and `deposit()`, we can control access to the account details while maintaining data integrity.
 
 ---
 
-- Method overriding is a concept in inheritance where a subclass provides its own implementation of a method that is already defined in its superclass. It allows the subclass to customize or extend the behavior inherited from the superclass. Method overriding is a key mechanism that enables polymorphism in Object-Oriented Programming. Polymorphism allows objects of different classes to be treated as objects of a common superclass. When a method is invoked on a superclass reference variable that points to a subclass object, the appropriate overridden method in the subclass is executed. This dynamic binding at runtime enables flexibility and extensibility in the code.
+2. Method overriding is a concept in inheritance where a subclass provides its own implementation of a method that is already defined in its superclass. It allows the subclass to customize or extend the behavior inherited from the superclass. Method overriding is a key mechanism that enables polymorphism in Object-Oriented Programming. Polymorphism allows objects of different classes to be treated as objects of a common superclass. When a method is invoked on a superclass reference variable that points to a subclass object, the appropriate overridden method in the subclass is executed. This dynamic binding at runtime enables flexibility and extensibility in the code.
 
 ---
 
-- Abstract classes and interfaces are both used to define common characteristics and behaviors in Object-Oriented Programming, but they have some differences.
+3. Abstract classes and interfaces are both used to define common characteristics and behaviors in Object-Oriented Programming, but they have some differences.
 
-  An abstract class is a class that cannot be instantiated and serves as a blueprint for its subclasses. It can contain both abstract and non-abstract methods. Abstract methods are declared without implementation and must be overridden by the subclasses. Abstract classes can also have non-abstract methods with implementation that can be inherited by the subclasses. Abstract classes are useful when you want to provide a common base for a group of subclasses and enforce certain method implementations.
+An abstract class is a class that cannot be instantiated and serves as a blueprint for its subclasses. It can contain both abstract and non-abstract methods. Abstract methods are declared without implementation and must be overridden by the subclasses. Abstract classes can also have non-abstract methods with implementation that can be inherited by the subclasses. Abstract classes are useful when you want to provide a common base for a group of subclasses and enforce certain method implementations.
 
-  An interface, on the other hand, is a collection of abstract methods that define a contract for a class to implement. It cannot have any method implementations. A class can implement multiple interfaces but can only inherit from a single abstract class. Interfaces provide a way to achieve multiple inheritance-like behavior in Java. They are useful when you want to define a set of methods that multiple classes should implement, irrespective of their class hierarchy.
+An interface, on the other hand, is a collection of abstract methods that define a contract for a class to implement. It cannot have any method implementations. A class can implement multiple interfaces but can only inherit from a single abstract class. Interfaces provide a way to achieve multiple inheritance-like behavior in Java. They are useful when you want to define a set of methods that multiple classes should implement, irrespective of their class hierarchy.
 
-  The choice between abstract classes and interfaces depends on the specific requirements of your design. If you need to provide default method implementations or create a base class with shared functionality, abstract classes are appropriate. If you want to define a contract for a class to adhere to without specifying any implementation details, interfaces are the way to go.
+The choice between abstract classes and interfaces depends on the specific requirements of your design. If you need to provide default method implementations or create a base class with shared functionality, abstract classes are appropriate. If you want to define a contract for a class to adhere to without specifying any implementation details, interfaces are the way to go.
 
 ---
 
-- Composition and inheritance are two different mechanisms for code reuse and relationship modeling in Object-Oriented Programming.
+4. Composition and inheritance are two different mechanisms for code reuse and relationship modeling in Object-Oriented Programming.
 
 Composition involves building complex objects by combining simpler objects as their parts. It establishes a "has-a" relationship between classes. Instead of inheriting behavior from a superclass, an object is composed of other objects. This approach provides more flexibility and allows for dynamic relationships. For example, consider a Car class composed of objects like an Engine, Wheels, and Interior. With composition, you can easily swap out parts or vary the composition of objects.
 

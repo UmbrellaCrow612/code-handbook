@@ -53,10 +53,10 @@ By incorporating user feedback and conducting research, designers can create int
 
 ## Questions
 
-- How can you ensure a consistent user experience across different devices and screen sizes?
-- What are some key principles to keep in mind when designing the layout of a user interface?
-- How can user research and usability testing contribute to the improvement of UI and UX design?
-- Why is it important to provide immediate and informative feedback to user actions in a user interface?
+1. How can you ensure a consistent user experience across different devices and screen sizes?
+2. What are some key principles to keep in mind when designing the layout of a user interface?
+3. How can user research and usability testing contribute to the improvement of UI and UX design?
+4. Why is it important to provide immediate and informative feedback to user actions in a user interface?
 
 Feel free to explore these questions further and dive into the details of each topic.
 
@@ -66,28 +66,29 @@ UI and UX design are iterative processes that involve constant refinement and im
 
 ### Answers
 
-- To ensure a consistent user experience across different devices and screen sizes, designers can employ responsive design techniques. This involves creating flexible layouts and using CSS media queries to adapt the interface to different screen sizes. Designers should prioritize content, use relative units for sizing elements, and consider touch-friendly interactions to accommodate various devices, such as smartphones, tablets, and desktops.
+1. To ensure a consistent user experience across different devices and screen sizes, designers can employ responsive design techniques. This involves creating flexible layouts and using CSS media queries to adapt the interface to different screen sizes. Designers should prioritize content, use relative units for sizing elements, and consider touch-friendly interactions to accommodate various devices, such as smartphones, tablets, and desktops.
 
 ---
 
-- When designing the layout of a user interface, several key principles should be kept in mind:
+2. When designing the layout of a user interface, several key principles should be kept in mind:
 
-  - Visual Hierarchy: Establish a clear visual hierarchy to guide users' attention and prioritize important information through size, color, contrast, and typography.
-  - Grid Systems: Utilize grids to organize and align elements consistently, which aids in creating a visually balanced and harmonious layout.
-  - White Space: Use white space (or negative space) effectively to provide breathing room between elements and improve readability and visual clarity.
-  - Grouping and Categorization: Group related elements together to provide a clear organization and aid users in understanding the structure of the interface.
-
----
-
-- User research and usability testing play crucial roles in improving UI and UX design:
-
-  - User Research: By conducting surveys, interviews, and user analysis, designers can gain insights into users' needs, expectations, and pain points. This information helps inform design decisions and ensures the interface meets user requirements.
-  - Usability Testing: By observing and collecting feedback from users while they interact with the interface, designers can identify usability issues, areas of improvement, and validate design choices. Usability testing helps ensure a smooth user experience and can guide iterative design refinements.
+- Visual Hierarchy: Establish a clear visual hierarchy to guide users' attention and prioritize important information through size, color, contrast, and typography.
+- Grid Systems: Utilize grids to organize and align elements consistently, which aids in creating a visually balanced and harmonious layout.
+- White Space: Use white space (or negative space) effectively to provide breathing room between elements and improve readability and visual clarity.
+- Grouping and Categorization: Group related elements together to provide a clear organization and aid users in understanding the structure of the interface.
 
 ---
 
-- Providing immediate and informative feedback to user actions is important in a user interface for several reasons:
-  - Guidance: Feedback lets users know that their actions are registered and guides them on the next steps or possible outcomes.
-  - Responsiveness: Timely feedback makes the interface feel responsive, enhancing the overall user experience and creating a sense of control and engagement.
-  - Error Prevention: Informative feedback helps users understand any errors or incorrect inputs, allowing them to correct their actions and avoid frustration or confusion.
-  - Learnability: Feedback provides users with cues and information that help them learn and understand the interface's behavior and functionality.
+3. User research and usability testing play crucial roles in improving UI and UX design:
+
+- User Research: By conducting surveys, interviews, and user analysis, designers can gain insights into users' needs, expectations, and pain points. This information helps inform design decisions and ensures the interface meets user requirements.
+- Usability Testing: By observing and collecting feedback from users while they interact with the interface, designers can identify usability issues, areas of improvement, and validate design choices. Usability testing helps ensure a smooth user experience and can guide iterative design refinements.
+
+---
+
+4. Providing immediate and informative feedback to user actions is important in a user interface for several reasons:
+
+- Guidance: Feedback lets users know that their actions are registered and guides them on the next steps or possible outcomes.
+- Responsiveness: Timely feedback makes the interface feel responsive, enhancing the overall user experience and creating a sense of control and engagement.
+- Error Prevention: Informative feedback helps users understand any errors or incorrect inputs, allowing them to correct their actions and avoid frustration or confusion.
+- Learnability: Feedback provides users with cues and information that help them learn and understand the interface's behavior and functionality.

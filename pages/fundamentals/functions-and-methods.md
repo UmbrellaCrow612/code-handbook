@@ -156,10 +156,10 @@ console.log("Area:", area);
 
 ## Questions
 
-- What is a function in programming?
-- What are the advantages of using functions in your code?
-- How do you define a function in Python?
-- What is a method in programming?
+1. What is a function in programming?
+2. What are the advantages of using functions in your code?
+3. How do you define a function in Python?
+4. What is a method in programming?
 
 ## Conclusion
 
@@ -169,9 +169,11 @@ To further enhance your understanding, explore additional examples in different 
 
 ### Answers
 
-- A function is a named block of code that performs a specific task or calculates a value. It allows you to group related statements together and execute them as a single unit.
+1. A function is a named block of code that performs a specific task or calculates a value. It allows you to group related statements together and execute them as a single unit.
 
 ---
+
+2.
 
 - Functions promote code organization and modularity by breaking down complex tasks into smaller, manageable units.
 - They improve code reusability, as functions can be called multiple times from different parts of the code.
@@ -179,6 +181,8 @@ To further enhance your understanding, explore additional examples in different 
 - They enable easier debugging and testing, as functions isolate specific logic for examination and verification.
 
 ---
+
+3.
 
 - In Python, you can define a function using the def keyword followed by the function name, parentheses for parameters (if any), and a colon to start the function's code block.
 
@@ -189,6 +193,8 @@ def name_of_function(stuff_that_gets_passed):
 ```
 
 ---
+
+4.
 
 - A method is a function that is associated with a specific object or class. It operates on the data associated with that object or class.
 - Methods are defined within the context of a class and can access and modify the object's attributes.

@@ -212,10 +212,10 @@ By understanding the concepts and techniques of type conversion, you can effecti
 
 ## Questions
 
-- What is a variable in programming, and what role does it play?
-- What are the characteristics of a variable?
-- Name three common numeric data types used in programming.
-- Explain the potential issues that can arise during type conversion.
+1. What is a variable in programming, and what role does it play?
+2. What are the characteristics of a variable?
+3. Name three common numeric data types used in programming.
+4. Explain the potential issues that can arise during type conversion.
 
 ## Conclusion
 
@@ -229,11 +229,11 @@ By understanding variables and data types, you gain the ability to create and ma
 
 What a variable is:
 
-- A variable in programming is a named storage location that holds a value. It plays a crucial role in storing and manipulating data during the execution of a program. Variables allow programmers to store information and perform operations on it.
+1. A variable in programming is a named storage location that holds a value. It plays a crucial role in storing and manipulating data during the execution of a program. Variables allow programmers to store information and perform operations on it.
 
 ---
 
-The characteristics of a variable include:
+2. The characteristics of a variable include:
 
 - **Name:** Variables are assigned unique identifiers, following rules defined by the programming language.
 - **Value:** Variables hold different types of data, which can be assigned or modified during program execution.
@@ -242,7 +242,7 @@ The characteristics of a variable include:
 
 ---
 
-Three common numeric data types used in programming are:
+3. Three common numeric data types used in programming are:
 
 - **Integer (int):** Represents whole numbers without fractional parts.
 - **Floating-point (float):** Represents real numbers with decimal points.
@@ -250,7 +250,7 @@ Three common numeric data types used in programming are:
 
 ---
 
-Potential issues during type conversion include:
+4. Potential issues during type conversion include:
 
 - Loss of precision: Converting from a higher precision data type to a lower precision type may result in a loss of information.
 - Type compatibility: Not all types can be converted to each other, so it's important to understand the rules and restrictions of type conversion in the programming language being used.

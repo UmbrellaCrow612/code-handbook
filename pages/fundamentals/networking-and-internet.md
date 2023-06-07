@@ -59,10 +59,10 @@ To further enhance your understanding, here are a few additional points:
 
 ## Questions
 
-- What is the client-server architecture, and how does it facilitate communication and data exchange between clients and servers?
-- How does the HTTP protocol work, and what are the key components of an HTTP request and response?
-- What are the key concepts and functionalities of socket programming, and how does it enable network communication between devices or applications?
-- What is the role of APIs and web services in software development, and how do they facilitate communication and data exchange between different systems?
+1. What is the client-server architecture, and how does it facilitate communication and data exchange between clients and servers?
+2. How does the HTTP protocol work, and what are the key components of an HTTP request and response?
+3. What are the key concepts and functionalities of socket programming, and how does it enable network communication between devices or applications?
+4. What is the role of APIs and web services in software development, and how do they facilitate communication and data exchange between different systems?
 
 ## Conclusion
 
@@ -76,8 +76,14 @@ By mastering these concepts, developers can design, build, and deploy applicatio
 
 1. Client-server architecture is a model where computing resources and tasks are distributed between clients and servers. The client initiates communication by sending requests to the server, which processes the requests and returns responses. This architecture enables communication and data exchange between clients and servers, facilitating various applications such as web browsing, email services, and online gaming.
 
+---
+
 2. The HTTP protocol (Hypertext Transfer Protocol) is the foundation of communication on the World Wide Web. In an HTTP request, the client sends a request message to the server, which includes an HTTP method (such as GET, POST, PUT, DELETE), a URL (Uniform Resource Locator) that identifies the resource, and optional headers providing additional information. The server processes the request and returns an HTTP response, which includes a status code indicating the outcome of the request, along with optional headers and the response body.
 
+---
+
 3. Socket programming enables network communication between devices or applications using sockets. A socket is an endpoint for sending or receiving data across a computer network. In socket programming, IP addresses uniquely identify devices on a network, and ports are numerical identifiers that allow multiple applications to run simultaneously on a device. Applications can create sockets and establish connections with other sockets to exchange data in real-time. Socket programming forms the basis for building various network protocols and services.
+
+---
 
 4. APIs (Application Programming Interfaces) and web services facilitate communication and data exchange between software systems. Web APIs expose functionality and data over the internet, often using HTTP as the communication protocol. They allow applications to interact with remote servers by sending HTTP requests and receiving HTTP responses. REST (Representational State Transfer) is an architectural style commonly used for designing scalable and stateless APIs. SOAP (Simple Object Access Protocol) is another protocol for exchanging structured information in web services. APIs and web services enable applications to integrate with external systems, retrieve data from remote servers, and provide services to other applications.

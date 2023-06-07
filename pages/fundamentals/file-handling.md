@@ -162,10 +162,10 @@ int main() {
 
 ## Questions
 
-- How can you open a file for reading in Python and read its contents line by line?
-- What are file streams, and how do they simplify file input/output operations?
-- Why is proper error handling important in file handling operations?
-- Why is resource cleanup necessary after file operations, and how is it achieved?
+1. How can you open a file for reading in Python and read its contents line by line?
+2. What are file streams, and how do they simplify file input/output operations?
+3. Why is proper error handling important in file handling operations?
+4. Why is resource cleanup necessary after file operations, and how is it achieved?
 
 ## Conclusion
 
@@ -173,7 +173,7 @@ File handling is a crucial part of software development, allowing programs to in
 
 ### Answers
 
-- To open a file for reading in Python, you can use the open() function with the file path and mode parameter set to "r". To read its contents line by line, you can iterate over the file object using a for loop.
+1. To open a file for reading in Python, you can use the open() function with the file path and mode parameter set to "r". To read its contents line by line, you can iterate over the file object using a for loop.
 
 ```python
 # Open a file for reading
@@ -189,7 +189,7 @@ file.close()
 
 ---
 
-- File streams are abstractions provided by programming languages to handle input and output operations on files. They offer higher-level functions and methods that simplify reading and writing operations, such as buffering, seeking, and error handling.
+2. File streams are abstractions provided by programming languages to handle input and output operations on files. They offer higher-level functions and methods that simplify reading and writing operations, such as buffering, seeking, and error handling.
 
 Example (C++ using fstream):
 
@@ -217,7 +217,7 @@ int main() {
 
 ---
 
-- Proper error handling in file handling operations is crucial because file operations can encounter errors due to various reasons. By checking return codes or handling exceptions, you can gracefully handle errors like file not found, insufficient permissions, or disk full, and take appropriate actions such as displaying error messages or performing alternative actions.
+3. Proper error handling in file handling operations is crucial because file operations can encounter errors due to various reasons. By checking return codes or handling exceptions, you can gracefully handle errors like file not found, insufficient permissions, or disk full, and take appropriate actions such as displaying error messages or performing alternative actions.
 
 ```java
 import java.io.BufferedReader;
@@ -240,7 +240,7 @@ public class Main {
 
 ---
 
-- Resource cleanup after file operations is necessary to release the resources associated with the file, such as internal buffers or locks. It helps prevent resource leaks and ensures that the file is available for other processes or operations. Resource cleanup is achieved by closing the file using appropriate methods or language-specific constructs like close() in Python or using try-with-resources in Java.
+4. Resource cleanup after file operations is necessary to release the resources associated with the file, such as internal buffers or locks. It helps prevent resource leaks and ensures that the file is available for other processes or operations. Resource cleanup is achieved by closing the file using appropriate methods or language-specific constructs like close() in Python or using try-with-resources in Java.
 
 ```python
 # Open a file for reading

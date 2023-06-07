@@ -30,13 +30,13 @@ Concurrency and multithreading are fundamental concepts in modern programming th
 
 ## Questions
 
-- What is the purpose of thread synchronization in concurrent programming? Provide an example of a scenario where thread synchronization is necessary and explain which synchronization mechanism could be used.
+1. What is the purpose of thread synchronization in concurrent programming? Provide an example of a scenario where thread synchronization is necessary and explain which synchronization mechanism could be used.
 
-- How can race conditions occur in concurrent programs, and what are the potential consequences of race conditions? Describe a situation where a race condition could lead to incorrect behavior and explain how it can be prevented.
+2. How can race conditions occur in concurrent programs, and what are the potential consequences of race conditions? Describe a situation where a race condition could lead to incorrect behavior and explain how it can be prevented.
 
-- What is a deadlock in concurrent programming, and how does it occur? Explain a scenario where two threads can deadlock, and suggest a strategy to prevent deadlocks from happening.
+3. What is a deadlock in concurrent programming, and how does it occur? Explain a scenario where two threads can deadlock, and suggest a strategy to prevent deadlocks from happening.
 
-- Compare and contrast the shared memory and message passing models in parallel programming. What are the advantages and disadvantages of each approach? Provide an example of a situation where one model would be more suitable than the other.
+4. Compare and contrast the shared memory and message passing models in parallel programming. What are the advantages and disadvantages of each approach? Provide an example of a situation where one model would be more suitable than the other.
 
 ## Conclusion
 
@@ -44,16 +44,16 @@ Concurrency and multithreading are powerful techniques for improving program per
 
 ### Answers
 
-- Thread synchronization is necessary in concurrent programming to ensure that multiple threads access shared resources in an orderly and coordinated manner, preventing data inconsistencies and conflicts. One example where thread synchronization is necessary is when multiple threads are updating a shared variable concurrently. In this case, a synchronization mechanism like a lock or mutex can be used to enforce mutual exclusion, allowing only one thread to access the shared variable at a time and preventing race conditions.
+1. Thread synchronization is necessary in concurrent programming to ensure that multiple threads access shared resources in an orderly and coordinated manner, preventing data inconsistencies and conflicts. One example where thread synchronization is necessary is when multiple threads are updating a shared variable concurrently. In this case, a synchronization mechanism like a lock or mutex can be used to enforce mutual exclusion, allowing only one thread to access the shared variable at a time and preventing race conditions.
 
 ---
 
-- Race conditions occur in concurrent programs when multiple threads access shared resources simultaneously, leading to unpredictable behavior and data corruption. The consequences of race conditions can include incorrect computations, data loss, or program crashes. To prevent race conditions, synchronization mechanisms like locks, atomic operations, or thread-safe data structures can be used. By ensuring that only one thread can modify a shared resource at a time, race conditions can be avoided and thread safety can be achieved.
+2. Race conditions occur in concurrent programs when multiple threads access shared resources simultaneously, leading to unpredictable behavior and data corruption. The consequences of race conditions can include incorrect computations, data loss, or program crashes. To prevent race conditions, synchronization mechanisms like locks, atomic operations, or thread-safe data structures can be used. By ensuring that only one thread can modify a shared resource at a time, race conditions can be avoided and thread safety can be achieved.
 
 ---
 
-- A deadlock occurs in concurrent programming when two or more threads are blocked indefinitely, waiting for each other to release resources that they hold. A common scenario for a deadlock is the "dining philosophers" problem, where a group of philosophers sits at a table with a limited number of forks. If each philosopher picks up one fork and waits for the second one, a deadlock can occur if all philosophers simultaneously hold one fork and are unable to proceed. To prevent deadlocks, strategies such as resource ordering, deadlock detection algorithms, or avoiding circular dependencies can be employed. For example, in the dining philosophers problem, assigning a strict ordering to the forks can prevent deadlocks.
+3. A deadlock occurs in concurrent programming when two or more threads are blocked indefinitely, waiting for each other to release resources that they hold. A common scenario for a deadlock is the "dining philosophers" problem, where a group of philosophers sits at a table with a limited number of forks. If each philosopher picks up one fork and waits for the second one, a deadlock can occur if all philosophers simultaneously hold one fork and are unable to proceed. To prevent deadlocks, strategies such as resource ordering, deadlock detection algorithms, or avoiding circular dependencies can be employed. For example, in the dining philosophers problem, assigning a strict ordering to the forks can prevent deadlocks.
 
 ---
 
-- In the shared memory model of parallel programming, threads can access shared memory directly. This allows for efficient communication and data sharing between threads. However, it also requires explicit synchronization mechanisms to coordinate access and prevent race conditions. In the message passing model, threads communicate by sending messages to each other. This model provides a more isolated and controlled approach to concurrency, as each thread has its own private memory. The advantage of the shared memory model is its efficiency in terms of communication, while the advantage of the message passing model is its simplicity and potential for better modularity. The choice between the two models depends on the specific requirements and constraints of the application.
+4. In the shared memory model of parallel programming, threads can access shared memory directly. This allows for efficient communication and data sharing between threads. However, it also requires explicit synchronization mechanisms to coordinate access and prevent race conditions. In the message passing model, threads communicate by sending messages to each other. This model provides a more isolated and controlled approach to concurrency, as each thread has its own private memory. The advantage of the shared memory model is its efficiency in terms of communication, while the advantage of the message passing model is its simplicity and potential for better modularity. The choice between the two models depends on the specific requirements and constraints of the application.

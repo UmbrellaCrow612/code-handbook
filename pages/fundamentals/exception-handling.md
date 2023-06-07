@@ -112,16 +112,16 @@ Exception handling is a crucial aspect of programming that allows you to gracefu
 
 ### Answers
 
-- The "finally" block in exception handling is used to specify code that will be executed regardless of whether an exception occurs or not. It ensures that essential cleanup operations or resource releases are performed. The "finally" block is typically used to release system resources, close open files, or perform other necessary cleanup operations that should always be executed, regardless of whether an exception was raised or not.
+1. The "finally" block in exception handling is used to specify code that will be executed regardless of whether an exception occurs or not. It ensures that essential cleanup operations or resource releases are performed. The "finally" block is typically used to release system resources, close open files, or perform other necessary cleanup operations that should always be executed, regardless of whether an exception was raised or not.
 
 ---
 
-- The order of "except" blocks in exception handling is significant. When an exception occurs, the program searches for the first matching "except" block in top-down order. It is important to catch specific exceptions before more general ones. If a more general exception is caught first, the specific exception will never be reached, resulting in undesired error handling or potential issues in the program's behavior.
+2. The order of "except" blocks in exception handling is significant. When an exception occurs, the program searches for the first matching "except" block in top-down order. It is important to catch specific exceptions before more general ones. If a more general exception is caught first, the specific exception will never be reached, resulting in undesired error handling or potential issues in the program's behavior.
 
 ---
 
-- It is important to catch specific exceptions rather than using a generic catch-all block for several reasons. Catching specific exceptions allows for targeted error handling, as different exceptions may require different actions or treatments. It enables the programmer to provide more specific error messages or perform specific operations based on the type of exception encountered. Catching specific exceptions also helps with debugging, as it allows for more accurate identification of the cause of an error.
+3. It is important to catch specific exceptions rather than using a generic catch-all block for several reasons. Catching specific exceptions allows for targeted error handling, as different exceptions may require different actions or treatments. It enables the programmer to provide more specific error messages or perform specific operations based on the type of exception encountered. Catching specific exceptions also helps with debugging, as it allows for more accurate identification of the cause of an error.
 
 ---
 
-- Exception chaining is a feature that allows an exception to carry information about a previous exception that caused it. It helps in diagnosing and debugging complex issues by providing a trail of exceptions, showing the original cause of the error. Exception chaining preserves the original stack trace and context, allowing developers to trace the error back to its root cause. This information can be invaluable in understanding the sequence of events leading to the exception and helps in addressing the underlying problem effectively.
+4. Exception chaining is a feature that allows an exception to carry information about a previous exception that caused it. It helps in diagnosing and debugging complex issues by providing a trail of exceptions, showing the original cause of the error. Exception chaining preserves the original stack trace and context, allowing developers to trace the error back to its root cause. This information can be invaluable in understanding the sequence of events leading to the exception and helps in addressing the underlying problem effectively.

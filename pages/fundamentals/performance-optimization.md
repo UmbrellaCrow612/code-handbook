@@ -85,15 +85,13 @@ By incorporating these improvements and considering the additional points mentio
 
 ## Questions
 
-- How can profiling and benchmarking techniques help identify performance bottlenecks in an application? Provide examples of specific metrics that can be measured and analyzed during profiling.
+1. How can profiling and benchmarking techniques help identify performance bottlenecks in an application? Provide examples of specific metrics that can be measured and analyzed during profiling.
 
-- Explain the concept of algorithmic complexity and how it impacts an application's performance. Discuss the significance of Big O notation in analyzing and selecting efficient algorithms.
+2. Explain the concept of algorithmic complexity and how it impacts an application's performance. Discuss the significance of Big O notation in analyzing and selecting efficient algorithms.
 
-- Describe the role of code and data structure optimization in improving application performance. Provide examples of code refactoring techniques and discuss the importance of selecting appropriate data structures.
+3. Describe the role of code and data structure optimization in improving application performance. Provide examples of code refactoring techniques and discuss the importance of selecting appropriate data structures.
 
-- Discuss the trade-offs involved in performance optimization. How can developers strike a balance between optimizing for speed and managing resource utilization? Provide examples of situations where trade-offs may arise and how to approach them.
-
-By answering these questions, students will gain a deeper understanding of the concepts and principles related to performance optimization.
+4. Discuss the trade-offs involved in performance optimization. How can developers strike a balance between optimizing for speed and managing resource utilization? Provide examples of situations where trade-offs may arise and how to approach them.
 
 ## Conclusion
 
@@ -115,16 +113,16 @@ By implementing these key points and following an iterative optimization process
 
 ### Answers
 
-- Profiling and benchmarking techniques are essential for identifying performance bottlenecks in an application. Profiling involves gathering runtime data to measure different aspects of an application's performance, such as execution time, memory usage, and I/O operations. For example, profiling can help identify which sections of code consume excessive processing power or which memory-intensive tasks contribute to memory leaks. By analyzing the collected data, developers can pinpoint areas that require optimization and make informed decisions to improve performance.
+1. Profiling and benchmarking techniques are essential for identifying performance bottlenecks in an application. Profiling involves gathering runtime data to measure different aspects of an application's performance, such as execution time, memory usage, and I/O operations. For example, profiling can help identify which sections of code consume excessive processing power or which memory-intensive tasks contribute to memory leaks. By analyzing the collected data, developers can pinpoint areas that require optimization and make informed decisions to improve performance.
 
 ---
 
-- Algorithmic complexity refers to the efficiency and scalability of algorithms, particularly how their performance scales with input size. Big O notation is used to express algorithmic complexity. For example, an algorithm with a time complexity of O(1) indicates that its performance remains constant regardless of the input size, while an algorithm with a time complexity of O(n^2) means that its performance grows quadratically with the input size. Understanding algorithmic complexity helps in selecting the most efficient algorithms for specific tasks, as algorithms with better complexity scales are more suitable for larger inputs and tend to perform better in terms of time and resource usage.
+2. Algorithmic complexity refers to the efficiency and scalability of algorithms, particularly how their performance scales with input size. Big O notation is used to express algorithmic complexity. For example, an algorithm with a time complexity of O(1) indicates that its performance remains constant regardless of the input size, while an algorithm with a time complexity of O(n^2) means that its performance grows quadratically with the input size. Understanding algorithmic complexity helps in selecting the most efficient algorithms for specific tasks, as algorithms with better complexity scales are more suitable for larger inputs and tend to perform better in terms of time and resource usage.
 
 ---
 
-- Code and data structure optimization significantly impact application performance. Code refactoring involves restructuring code to eliminate redundant operations, minimize loop iterations, and improve algorithm efficiency. For example, removing unnecessary calculations within loops or replacing inefficient algorithms with more efficient alternatives can lead to performance improvements. Data structure selection is also crucial, as choosing appropriate data structures can optimize data access, search, insertion, and deletion operations. For instance, using a hash table for fast key-value lookups or a balanced binary search tree for efficient sorted data access can enhance performance. By optimizing code and data structures, developers can improve the overall efficiency of their applications.
+3. Code and data structure optimization significantly impact application performance. Code refactoring involves restructuring code to eliminate redundant operations, minimize loop iterations, and improve algorithm efficiency. For example, removing unnecessary calculations within loops or replacing inefficient algorithms with more efficient alternatives can lead to performance improvements. Data structure selection is also crucial, as choosing appropriate data structures can optimize data access, search, insertion, and deletion operations. For instance, using a hash table for fast key-value lookups or a balanced binary search tree for efficient sorted data access can enhance performance. By optimizing code and data structures, developers can improve the overall efficiency of their applications.
 
 ---
 
-- Performance optimization often involves trade-offs. For example, optimizing for speed may require increased memory consumption or vice versa. The key is to strike a balance between performance and resource utilization based on the specific requirements and constraints of the application. Developers should consider factors such as the available hardware resources, expected workload, and user experience expectations. It's essential to prioritize critical performance aspects while ensuring the application remains manageable and sustainable in terms of resource usage. Regular profiling, monitoring, and testing can help evaluate the trade-offs and make informed decisions to achieve optimal performance.
+4. Performance optimization often involves trade-offs. For example, optimizing for speed may require increased memory consumption or vice versa. The key is to strike a balance between performance and resource utilization based on the specific requirements and constraints of the application. Developers should consider factors such as the available hardware resources, expected workload, and user experience expectations. It's essential to prioritize critical performance aspects while ensuring the application remains manageable and sustainable in terms of resource usage. Regular profiling, monitoring, and testing can help evaluate the trade-offs and make informed decisions to achieve optimal performance.

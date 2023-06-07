@@ -117,10 +117,10 @@ In this example, we have a try-except block that handles a specific type of erro
 
 ## Questions
 
-- What are control structures in programming?
-- How does a for loop differ from a while loop?
-- What are control flow statements and how do they alter the normal flow of execution?
-- Why is practicing control structures important for programmers?
+1. What are control structures in programming?
+2. How does a for loop differ from a while loop?
+3. What are control flow statements and how do they alter the normal flow of execution?
+4. Why is practicing control structures important for programmers?
 
 ## Conclusion
 
@@ -128,7 +128,16 @@ Understanding control structures is fundamental to writing efficient and dynamic
 
 ### Answers
 
-- Control structures are programming constructs that allow you to control the flow of execution in a program based on specific conditions or perform repetitive tasks. They include conditional statements (such as if statements) and loops (such as for and while loops).
-- A for loop is used when you know the number of iterations in advance and want to iterate over a sequence or a defined range of values. It uses a loop variable that takes on each value in the sequence during each iteration. A while loop, on the other hand, repeats a block of code as long as a condition is true. It continues iterating until the condition becomes false.
-- Control flow statements are programming statements that alter the normal flow of execution within loops or conditional statements. They allow you to control the loop iterations or change the flow based on specific conditions. Examples of control flow statements include break, continue, return, and pass. These statements provide flexibility and allow you to optimize code execution based on specific scenarios.
-- Practicing control structures is important for programmers because they are fundamental to writing efficient and dynamic programs. Control structures enable you to make decisions, selectively perform actions, and repeat code blocks. By practicing control structures, programmers can become proficient in creating programs that perform the desired actions, handle repetitive tasks efficiently, and make effective use of conditional statements and loops.
+1. Control structures are programming constructs that allow you to control the flow of execution in a program based on specific conditions or perform repetitive tasks. They include conditional statements (such as if statements) and loops (such as for and while loops).
+
+---
+
+2. A for loop is used when you know the number of iterations in advance and want to iterate over a sequence or a defined range of values. It uses a loop variable that takes on each value in the sequence during each iteration. A while loop, on the other hand, repeats a block of code as long as a condition is true. It continues iterating until the condition becomes false.
+
+---
+
+3. Control flow statements are programming statements that alter the normal flow of execution within loops or conditional statements. They allow you to control the loop iterations or change the flow based on specific conditions. Examples of control flow statements include break, continue, return, and pass. These statements provide flexibility and allow you to optimize code execution based on specific scenarios.
+
+---
+
+4. Practicing control structures is important for programmers because they are fundamental to writing efficient and dynamic programs. Control structures enable you to make decisions, selectively perform actions, and repeat code blocks. By practicing control structures, programmers can become proficient in creating programs that perform the desired actions, handle repetitive tasks efficiently, and make effective use of conditional statements and loops.

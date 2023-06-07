@@ -128,10 +128,10 @@ plt.show()
 
 ## Questions
 
-- What are the advantages and disadvantages of using arrays compared to other data structures like linked lists?
-- How can I efficiently insert an element at the end of a linked list?
-- What are some real-life scenarios or applications where stacks are commonly used?
-- How does a binary search tree (BST) differ from a binary tree, and what advantages does it offer?
+1. What are the advantages and disadvantages of using arrays compared to other data structures like linked lists?
+2. How can I efficiently insert an element at the end of a linked list?
+3. What are some real-life scenarios or applications where stacks are commonly used?
+4. How does a binary search tree (BST) differ from a binary tree, and what advantages does it offer?
 
 ## Conclusion
 
@@ -139,16 +139,16 @@ Understanding and utilizing different data structures are crucial for efficient 
 
 ### Answers
 
-- The advantages of using arrays include constant-time access to elements, as they can be accessed using their index. Arrays also offer efficient memory allocation since they store elements in contiguous memory locations. However, arrays have a fixed size determined at the time of creation, which means they cannot dynamically grow or shrink. Additionally, inserting or deleting elements in the middle of an array requires shifting elements, resulting in a time-consuming operation.
+1. The advantages of using arrays include constant-time access to elements, as they can be accessed using their index. Arrays also offer efficient memory allocation since they store elements in contiguous memory locations. However, arrays have a fixed size determined at the time of creation, which means they cannot dynamically grow or shrink. Additionally, inserting or deleting elements in the middle of an array requires shifting elements, resulting in a time-consuming operation.
 
 ---
 
-- To efficiently insert an element at the end of a linked list, you can maintain a reference to the tail node in addition to the head node. This allows direct access to the last node, enabling constant-time insertion at the end. By updating the next reference of the current tail node to the newly inserted node and updating the tail reference to the new node, the element can be inserted at the end efficiently.
+2. To efficiently insert an element at the end of a linked list, you can maintain a reference to the tail node in addition to the head node. This allows direct access to the last node, enabling constant-time insertion at the end. By updating the next reference of the current tail node to the newly inserted node and updating the tail reference to the new node, the element can be inserted at the end efficiently.
 
 ---
 
-- Stacks are commonly used in various real-life scenarios, including function call stack in programming languages (to keep track of function calls and return addresses), undo/redo functionality in text editors (to maintain a history of actions), backtracking algorithms (to store and backtrack through states), and expression evaluation (to handle parentheses balancing and infix to postfix conversions).
+3. Stacks are commonly used in various real-life scenarios, including function call stack in programming languages (to keep track of function calls and return addresses), undo/redo functionality in text editors (to maintain a history of actions), backtracking algorithms (to store and backtrack through states), and expression evaluation (to handle parentheses balancing and infix to postfix conversions).
 
 ---
 
-- A binary search tree (BST) differs from a binary tree in that it satisfies the binary search property. In a BST, for every node, the values of all nodes in its left subtree are less than its value, and the values of all nodes in its right subtree are greater than its value. This property enables efficient search, insertion, and deletion operations with an average time complexity of O(log n) in balanced BSTs. It allows for faster retrieval of elements compared to a general binary tree, where no specific ordering is enforced.
+4. A binary search tree (BST) differs from a binary tree in that it satisfies the binary search property. In a BST, for every node, the values of all nodes in its left subtree are less than its value, and the values of all nodes in its right subtree are greater than its value. This property enables efficient search, insertion, and deletion operations with an average time complexity of O(log n) in balanced BSTs. It allows for faster retrieval of elements compared to a general binary tree, where no specific ordering is enforced.

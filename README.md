@@ -63,7 +63,6 @@ file-name
 
 - Fundamentals:
 
-- Rename / change the questions and answers to use number bullet points.
 
 
 
@@ -73,9 +72,11 @@ Done:
 - Fundamentals: rewrite with new format.
 - Data Structures: rewrite with new format.
 - Data Structures: markdown is correct order `# ##`
+- Renamed all questions and answers to use number points.
 
 Later to do:
 
-Sit done and listen / proof read all of it.
+- Sit done and listen / proof read all of it.
+- Add SEO, og images and descriptions like next.site or use there api to make your own
 
 Fact check each file and make sure they are consistent

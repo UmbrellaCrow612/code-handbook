@@ -80,7 +80,6 @@ Encryption and hashing are techniques used to secure data at rest and during tra
 - **Encryption**: Transforming data into an unreadable format using encryption algorithms and keys, making it secure from unauthorized access.
 - **Hashing**: Converting data into fixed-length hash values using hashing algorithms, useful for verifying data integrity and storing passwords securely.
 
-![encryption](/encription.png)
 
 Using encryption and hashing helps protect sensitive data from unauthorized disclosure or tampering.
 
