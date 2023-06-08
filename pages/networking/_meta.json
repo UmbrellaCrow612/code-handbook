@@ -3,5 +3,7 @@
   "http": "HTTP",
   "ip-addressing": "",
   "routing": "",
-  "tcp-ip": "TCP/IP"
+  "tcp-ip": "TCP/IP",
+  "ports-and-sockets": "Ports and Sockets"
+
 }
