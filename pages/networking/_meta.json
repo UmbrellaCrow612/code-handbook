@@ -4,6 +4,6 @@
   "ip-addressing": "",
   "routing": "",
   "tcp-ip": "TCP/IP",
-  "ports-and-sockets": "Ports and Sockets"
-
+  "ports-and-sockets": "Ports and Sockets",
+  "dns": ""
 }
