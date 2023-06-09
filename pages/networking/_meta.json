@@ -7,5 +7,6 @@
   "ports-and-sockets": "Ports and Sockets",
   "dns": "",
   "fire-nat": "Firewalls and NAT",
-  "vlans": "VLANs"
+  "vlans": "VLANs",
+  "dhcp": "DHCP"
 }
