@@ -6,5 +6,6 @@
   "tcp-ip": "TCP/IP",
   "ports-and-sockets": "Ports and Sockets",
   "dns": "",
-  "fire-nat": "Firewalls and NAT"
+  "fire-nat": "Firewalls and NAT",
+  "vlans": "VLANs"
 }
