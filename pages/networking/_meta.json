@@ -8,5 +8,6 @@
   "dns": "",
   "fire-nat": "Firewalls and NAT",
   "vlans": "VLANs",
-  "dhcp": "DHCP"
+  "dhcp": "DHCP",
+  "net-sec": "Network Security"
 }
