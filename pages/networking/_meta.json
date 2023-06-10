@@ -9,5 +9,6 @@
   "fire-nat": "Firewalls and NAT",
   "vlans": "VLANs",
   "dhcp": "DHCP",
-  "net-sec": "Network Security"
+  "net-sec": "Network Security",
+  "osi-model": "OSI Model"
 }
