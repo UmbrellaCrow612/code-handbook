@@ -4,5 +4,6 @@
   "sql": "SQL",
   "dbms": "DBMS",
   "mysql": "MySql",
-  "rel-base": "Relational Databases"
+  "rel-base": "Relational Databases",
+  "non-rel-base": "Non-Relational Databases"
 }
