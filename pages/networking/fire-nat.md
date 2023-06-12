@@ -9,8 +9,6 @@
 
 # Firewalls and NAT
 
-Certainly! Here's an organized explanation of firewalls using sections and markdown:
-
 ## Introduction to Firewalls
 
 A firewall is a network security device that acts as a barrier between internal and external networks, controlling the flow of network traffic based on predetermined security rules. Its primary purpose is to protect a network by monitoring and filtering incoming and outgoing network traffic, allowing authorized traffic to pass through while blocking or restricting unauthorized or malicious traffic.
