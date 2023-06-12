@@ -3,5 +3,6 @@
   "basics": "",
   "sql": "SQL",
   "dbms": "DBMS",
-  "mysql": "MySql"
+  "mysql": "MySql",
+  "rel-base": "Relational Databases"
 }

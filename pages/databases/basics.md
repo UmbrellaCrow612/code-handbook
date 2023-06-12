@@ -1,11 +1,10 @@
-
 # Basics of Databases
 
-### What is a Database?
+## What is a Database?
 
 A **database** is a structured collection of data that is organized and stored in a way that enables efficient retrieval, updating, and management of the data. It acts as a central repository for storing and organizing information.
 
-### Key Terminology
+## Key Terminology
 
 To understand databases, it's important to be familiar with the following key terms:
 
@@ -17,7 +16,7 @@ To understand databases, it's important to be familiar with the following key te
 
 - **Relationships**: Relationships define the connections between tables in a database. They represent how different tables are related to each other based on shared data. Common types of relationships include one-to-one, one-to-many, and many-to-many. These relationships ensure data integrity and enable efficient data retrieval.
 
-### Relational Databases
+## Relational Databases
 
 Relational databases are the most common type of database. They organize data into tables and establish relationships between them. Here are some key aspects of relational databases:
 
@@ -27,7 +26,7 @@ Relational databases are the most common type of database. They organize data in
 
 - **Normalization**: Normalization is a process that helps eliminate data redundancy and improve data integrity. It involves dividing data into multiple tables, ensuring each table represents a single entity or concept, and establishing relationships between them.
 
-### Non-Relational Databases (NoSQL)
+## Non-Relational Databases (NoSQL)
 
 While relational databases are popular, there are also non-relational databases, often referred to as NoSQL databases. These databases differ from traditional relational databases in the following ways:
 
