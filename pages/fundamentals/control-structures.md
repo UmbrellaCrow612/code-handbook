@@ -35,7 +35,7 @@ else:
 
 Loops are used to repeat a block of code multiple times until a certain condition is met. There are two primary types of loops:
 
-### 1. **for loop:**
+### For loop
 
 The for loop allows you to iterate over a sequence (such as a list or string) or a defined range of values. Here's an example of a for loop in Python:
 
@@ -47,7 +47,7 @@ for item in sequence:
 
 The loop variable (item in the example above) takes on each value in the sequence during each iteration of the loop.
 
-### 2. **while loop:**
+### while loop
 
 The while loop repeats a block of code as long as a condition is true. It continues iterating until the condition becomes false. Here's an example:
 
