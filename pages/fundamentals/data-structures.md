@@ -84,7 +84,9 @@ print(dequeued_element)  # Output: 1
 
 ## Trees
 
-A tree is a hierarchical data structure composed of nodes, where each node can have zero or more child nodes. The topmost node is called the root, and nodes without children are called leaves. Trees are used to represent hierarchical relationships and provide efficient search, insertion, and deletion operations. Common types of trees include binary trees, AVL trees, and B-trees.
+A tree is a hierarchical data structure composed of nodes, where each node can have zero or more child nodes. The topmost node is called the root, and nodes without children are called leaves. Trees are used to represent hierarchical relationships and provide efficient search, insertion, and deletion operations. Common types of trees include binary trees, AVL trees, and B-trees
+
+.
 
 ```python
 # Creating a binary tree node
@@ -126,29 +128,143 @@ nx.draw(G, with_labels=True)
 plt.show()
 ```
 
+## Hash Tables
+
+A hash table, or hash map, is a data structure that stores key-value pairs. It uses a hash function to compute an index, or hash code, for each key. This allows for efficient insertion, deletion, and retrieval of values based on their associated keys.
+
+```python
+# Using a dictionary as a hash table
+my_hash_table = {}
+
+# Inserting key-value pairs
+my_hash_table["apple"] = 1
+my_hash_table["banana"] = 2
+my_hash_table["orange"] = 3
+
+# Retrieving values
+print(my_hash_table["banana"])  # Output: 2
+```
+
+## Heaps
+
+A heap is a complete binary tree that satisfies the heap property. In a min heap, for any given node, the value of that node is less than or equal to the values of its children. In a max heap, the value of the node is greater than or equal to the values of its children. Heaps are commonly used for efficient priority queue implementation.
+
+```python
+import heapq
+
+# Using heapq module functions for heap operations
+my_heap = []
+
+# Pushing elements onto the heap
+heapq.heappush(my_heap, 3)
+heapq.heappush(my_heap, 1)
+heapq.heappush(my_heap, 2)
+
+# Popping elements from the heap
+popped_element = heapq.heappop(my_heap)
+print(popped_element)  # Output: 1
+```
+
+## Sets
+
+A set is a data structure that stores a collection of distinct elements without any specific order. Sets provide efficient membership tests and support operations such as union, intersection, and difference.
+
+```python
+# Using the set data type
+my_set = {1, 2, 3}
+
+# Adding elements to the set
+my_set.add(4)
+my_set.add(5)
+
+# Removing elements from the set
+my_set.remove(3)
+
+# Checking membership
+print(2 in my_set)  # Output: True
+```
+
+## Tries
+
+A trie, also known as a prefix tree, is a specialized data structure for efficient retrieval of strings based on prefixes. Tries are commonly used in applications like autocomplete and spell checkers.
+
+```python
+# Creating a trie node
+class TrieNode:
+    def __init__(self):
+        self.children = {}
+        self.is_end_of_word = False
+
+# Creating a trie
+root = TrieNode()
+
+# Inserting words into the
+
+ trie
+words = ["apple", "banana", "orange"]
+for word in words:
+    current = root
+    for char in word:
+        if char not in current.children:
+            current.children[char] = TrieNode()
+        current = current.children[char]
+    current.is_end_of_word = True
+```
+
 ## Questions
 
 1. What are the advantages and disadvantages of using arrays compared to other data structures like linked lists?
 2. How can I efficiently insert an element at the end of a linked list?
 3. What are some real-life scenarios or applications where stacks are commonly used?
 4. How does a binary search tree (BST) differ from a binary tree, and what advantages does it offer?
+5. How can I efficiently search for a specific element in a hash table?
+6. What is the difference between a min heap and a max heap, and how can I perform heap operations in Python?
+7. When should I use a set instead of a list or an array?
+8. How does a trie data structure help with efficient string retrieval based on prefixes?
 
 ## Conclusion
 
-Understanding and utilizing different data structures are crucial for efficient data management and algorithm design. Arrays offer constant-time access, linked lists provide flexibility, stacks and queues enable specific ordering requirements, trees offer hierarchical representations, and graphs handle complex relationships. By selecting the appropriate data structure based on the specific requirements of your program, you can optimize storage, retrieval, and manipulation of data, leading to efficient and effective solutions.
+Understanding and utilizing different data structures are crucial for efficient data management and algorithm design. Arrays offer constant-time access, linked lists provide flexibility, stacks and queues enable specific ordering requirements, trees offer hierarchical representations, graphs handle complex relationships, hash tables provide efficient key-value pair storage, heaps support priority queues, sets handle distinct elements, and tries assist with efficient string retrieval. By selecting the appropriate data structure based on the specific requirements of your program, you can optimize storage, retrieval, and manipulation of data, leading to efficient and effective solutions.
 
 ### Answers
 
-1. The advantages of using arrays include constant-time access to elements, as they can be accessed using their index. Arrays also offer efficient memory allocation since they store elements in contiguous memory locations. However, arrays have a fixed size determined at the time of creation, which means they cannot dynamically grow or shrink. Additionally, inserting or deleting elements in the middle of an array requires shifting elements, resulting in a time-consuming operation.
+1. **What are the advantages and disadvantages of using arrays compared to other data structures like linked lists?**
 
----
+   - Advantages of arrays:
+     - Constant-time access to elements using an index.
+     - Memory locality, which improves cache performance.
+   - Disadvantages of arrays:
+     - Fixed size, which can lead to inefficient memory usage if the size needs to be changed dynamically.
+     - Insertion and deletion operations in the middle of the array can be time-consuming.
 
-2. To efficiently insert an element at the end of a linked list, you can maintain a reference to the tail node in addition to the head node. This allows direct access to the last node, enabling constant-time insertion at the end. By updating the next reference of the current tail node to the newly inserted node and updating the tail reference to the new node, the element can be inserted at the end efficiently.
+2. **How can I efficiently insert an element at the end of a linked list?**
 
----
+   - To efficiently insert an element at the end of a linked list, you can keep a reference to the last node of the list. When inserting a new element, simply update the `next` reference of the last node to point to the new node and update the reference to the last node.
 
-3. Stacks are commonly used in various real-life scenarios, including function call stack in programming languages (to keep track of function calls and return addresses), undo/redo functionality in text editors (to maintain a history of actions), backtracking algorithms (to store and backtrack through states), and expression evaluation (to handle parentheses balancing and infix to postfix conversions).
+3. **What are some real-life scenarios or applications where stacks are commonly used?**
 
----
+   - Stacks are commonly used in scenarios such as:
+     - Function call stack in programming languages.
+     - Undo/redo functionality in text editors and applications.
+     - Implementing backtracking algorithms.
+     - Parsing expressions in programming languages.
+     - Managing recursive algorithms.
 
-4. A binary search tree (BST) differs from a binary tree in that it satisfies the binary search property. In a BST, for every node, the values of all nodes in its left subtree are less than its value, and the values of all nodes in its right subtree are greater than its value. This property enables efficient search, insertion, and deletion operations with an average time complexity of O(log n) in balanced BSTs. It allows for faster retrieval of elements compared to a general binary tree, where no specific ordering is enforced.
+4. **How does a binary search tree (BST) differ from a binary tree, and what advantages does it offer?**
+
+   - A binary search tree (BST) is a type of binary tree where the left child of a node has a smaller value, and the right child has a greater value. The BST property allows for efficient searching, insertion, and deletion of elements. In a binary tree, there is no specific ordering between the nodes. The advantages of BSTs include efficient searching with a time complexity of O(log n) on average (assuming a balanced tree) and O(n) in the worst case.
+
+5. **How can I efficiently search for a specific element in a hash table?**
+
+   - To efficiently search for a specific element in a hash table, you can compute the hash code of the element's key and use it to locate the corresponding bucket. Then, perform a search within the bucket using the appropriate collision resolution technique, such as chaining or open addressing.
+
+6. **What is the difference between a min heap and a max heap, and how can I perform heap operations in Python?**
+
+   - In a min heap, the minimum element is always at the root, and for any given node, the value is less than or equal to the values of its children. In a max heap, the maximum element is at the root, and for any given node, the value is greater than or equal to the values of its children. In Python, you can perform heap operations using the `heapq` module, which provides functions like `heappush()` and `heappop()` to insert elements onto the heap and remove elements from the heap, respectively.
+
+7. **When should I use a set instead of a list or an array?**
+
+   - You should use a set instead of a list or an array when you need to store a collection of distinct elements and perform efficient membership tests. Sets are particularly useful when you need to check whether an element exists in the collection without caring about the specific order or the number of occurrences of elements.
+
+8. **How does a trie data structure help with efficient string retrieval based on prefixes?**
+   - A trie data structure is particularly efficient for string retrieval based on prefixes because it organizes the strings in a tree-like structure where each level represents a character in the string. The common prefixes are shared among multiple strings, which reduces the search space. By traversing the trie based on the characters in the prefix, you can efficiently retrieve all strings that share the same prefix. This makes tries useful in applications like autocomplete and spell checkers.
