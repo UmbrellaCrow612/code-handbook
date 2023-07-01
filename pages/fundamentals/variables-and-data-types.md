@@ -15,36 +15,36 @@ A variable is a named storage location in the computer's memory that can hold a 
 
 Data types specify the kind of data that can be stored in a variable. They determine the range of values that a variable can hold and the operations that can be performed on it. The choice of data type depends on the nature of the data being stored and the operations to be performed on that data. Common data types include:
 
-1. `Numeric Types`:
+1. **Numeric Types:**
 
 - `Integer (int)`: Represents whole numbers without fractional parts, e.g., 0, 1, -5, 100.
 - `Floating-Point (float)`: Represents real numbers with decimal points, e.g., 3.14, -2.5, 1.0.
 - `Double Precision (double)`: Similar to floating-point numbers but with higher precision and a larger range of values.
 
-2. `Boolean Type (bool)`:
+2. **Boolean Type (bool):**
 
 - Represents logical values, either true or false, used for decision-making and control flow.
 
-3. `Character Types`:
+3. **Character Types:**
 
 - `Character (char)`: Represents a single character, e.g., 'A', '9', '$'.
 - `String (str)`: Represents a sequence of characters, e.g., "Hello, World!", "OpenAI", "123".
 
-4. `Composite Types`:
+4. **Composite Types:**
 
 - `Array`: Represents a collection of values of the same type, accessed using an index.
 - `List`: Similar to an array, but it can dynamically grow and shrink in size.
 - `Tuple`: Represents an ordered collection of values of different types.
 - `Dictionary`: Stores key-value pairs, allowing efficient lookup based on keys.
 
-5. `Custom Types`:
+5. **Custom Types:**
 
 - `Class`: Allows programmers to define their own types by combining data and methods.
 - `Struct`: Similar to a class but focused on holding data rather than methods.
 
-6. `Other Types`:
+6. **Other Types:** Many programming langiuages other there own or unique version for data types.
 
-## implementation
+## Implementation
 
 ### Python
 
