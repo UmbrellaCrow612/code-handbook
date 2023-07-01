@@ -10,9 +10,9 @@ A function is a named block of code that performs a specific task or calculates 
 
 2. **Parameters:** Functions can accept zero or more parameters (also known as arguments). Parameters are placeholders for values that the function expects to receive when it is called. The function signature, including the parameter types, helps distinguish between different functions.
 
-3. **Return Value:** Functions can return a value as the result of their execution. The return value represents the output or outcome of the function's task.
+3. **Return Value:** Functions can return a value as the result of their execution. The return value represents the output or outcome of the function's task. Sometimes functions do not return something, instead execute some code.
 
-4. **Code Block:** Functions have a body, which is a block of code enclosed within curly braces ({}) that contains the statements to be executed when the function is called.
+4. **Code Block:** Functions have a body, which is a block of code enclosed within curly braces **{ Code }** that contains the statements to be executed when the function is called.
 
 5. **Invocation:** Functions are called or invoked to execute their code. The function's name, followed by parentheses, is used to invoke the function and pass any required arguments.
 
@@ -27,6 +27,26 @@ def greet(name):
 
 # Function call
 greet("John")
+
+## Another example 
+
+def calculate_average_grade(grades):
+
+    if not grades:
+
+        return None
+
+    total = sum(grades)
+
+    average = total / len(grades)
+
+    return average
+
+student_grades = [85, 90, 92, 88, 95]
+
+average_grade = calculate_average_grade(student_grades)
+
+print("Average grade: ", average_grade)
 ```
 
 ### Java
@@ -34,6 +54,7 @@ greet("John")
 ```java
 // Function example in Java
 public class Greetings {
+
     public static void greet(String name) {
         // Code block executed when the function is called
         System.out.println("Hello, " + name + "!");
@@ -42,6 +63,42 @@ public class Greetings {
     public static void main(String[] args) {
         // Function call
         greet("John");
+    }
+}
+
+
+// Another example
+
+public class AverageGradeCalculator {
+
+    public static double calculateAverageGrade(int[] grades) {
+
+        if (grades == null || grades.length == 0) {
+
+            return -1;
+
+        }
+
+        int total = 0;
+
+        for (int grade : grades) {
+
+            total += grade;
+
+        }
+
+        double average = (double) total / grades.length;
+
+        return average;
+    }
+
+    public static void main(String[] args) {
+
+        int[] studentGrades = {85, 90, 92, 88, 95};
+
+        double averageGrade = calculateAverageGrade(studentGrades);
+
+        System.out.println("Average grade: " + averageGrade);
     }
 }
 ```
@@ -57,6 +114,29 @@ function greet(name) {
 
 // Function call
 greet("John");
+
+// Another example 
+
+function calculateAverageGrade(grades) {
+
+  if (!grades || grades.length === 0) {
+
+    return -1;
+
+  }
+
+  let total = grades.reduce((sum, grade) => sum + grade, 0);
+
+  let average = total / grades.length;
+
+  return average;
+}
+
+let studentGrades = [85, 90, 92, 88, 95];
+
+let averageGrade = calculateAverageGrade(studentGrades);
+
+console.log("Average grade: " + averageGrade);
 ```
 
 In the example above, the `greet` function accepts a parameter `name` and prints a greeting message.
@@ -71,9 +151,9 @@ Methods are similar to functions but are associated with specific objects or cla
 
 2. **Parameters:** Methods can accept zero or more parameters, similar to functions. The first parameter of a method, often called `self` (or `this` in some languages), represents the instance of the class on which the method is called.
 
-3. **Return Value:** Like functions, methods can also return a value as the result of their execution.
+3. **Return Value:** Like functions, methods can also return a value as the result of their execution. Sometimes methods do not return something, instead execute some code.
 
-4. **Code Block:** Methods have a body, which is a block of code enclosed within curly braces ({}) that contains the statements to be executed when the method is called.
+4. **Code Block:** Methods have a body, which is a block of code enclosed within curly braces **{ Code }** that contains the statements to be executed when the method is called.
 
 5. **Invocation:** Methods are called on an instance of a class using the dot notation, specifying the instance followed by the method name and any required arguments.
 
@@ -83,7 +163,9 @@ Methods are similar to functions but are associated with specific objects or cla
 
 ```python
 class Circle:
+
     def __init__(self, radius):
+
         self.radius = radius
 
     def calculate_area(self):
@@ -95,24 +177,25 @@ my_circle = Circle(5)
 
 # Call the calculate_area method on the my_circle instance
 area = my_circle.calculate_area()
+
 print("Area:", area)
 ```
 
 In the example above, the `Circle` class has a method called `calculate_area` that calculates the area of a circle based on its radius.
 
-Methods allow you to associate specific actions
-
-or computations with objects or classes, making your code more organized and intuitive. By encapsulating related functionality within methods, you can operate on object-specific data and leverage the benefits of object-oriented programming.
+Methods allow you to associate specific actions or computations with objects or classes, making your code more organized and intuitive. By encapsulating related functionality within methods, you can operate on object-specific data and leverage the benefits of object-oriented programming.
 
 ### Java
 
 ```java
-// Method example in Java
 public class Circle {
+
     private double radius;
 
     public Circle(double radius) {
+
         this.radius = radius;
+
     }
 
     public double calculateArea() {
@@ -126,6 +209,7 @@ public class Circle {
 
         // Call the calculateArea method on the myCircle instance
         double area = myCircle.calculateArea();
+
         System.out.println("Area: " + area);
     }
 }
@@ -134,15 +218,18 @@ public class Circle {
 ### JavaScript
 
 ```javascript
-// Method example in JavaScript
 class Circle {
+
   constructor(radius) {
+
     this.radius = radius;
+
   }
 
   calculateArea() {
     // Code block executed when the method is called
     return 3.14 * this.radius ** 2;
+
   }
 }
 
@@ -151,6 +238,7 @@ const myCircle = new Circle(5);
 
 // Call the calculateArea method on the myCircle instance
 const area = myCircle.calculateArea();
+
 console.log("Area:", area);
 ```
 
@@ -173,7 +261,7 @@ To further enhance your understanding, explore additional examples in different 
 
 ---
 
-2.
+2:
 
 - Functions promote code organization and modularity by breaking down complex tasks into smaller, manageable units.
 - They improve code reusability, as functions can be called multiple times from different parts of the code.
@@ -182,7 +270,7 @@ To further enhance your understanding, explore additional examples in different 
 
 ---
 
-3.
+3:
 
 - In Python, you can define a function using the def keyword followed by the function name, parentheses for parameters (if any), and a colon to start the function's code block.
 
@@ -194,7 +282,7 @@ def name_of_function(stuff_that_gets_passed):
 
 ---
 
-4.
+4:
 
 - A method is a function that is associated with a specific object or class. It operates on the data associated with that object or class.
 - Methods are defined within the context of a class and can access and modify the object's attributes.
