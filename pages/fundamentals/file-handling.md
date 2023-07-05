@@ -93,9 +93,7 @@ public class Main {
             e.printStackTrace();
         }
 
-        try (Buffered
-
-Writer writer = new BufferedWriter(new FileWriter("output.txt"))) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter("output.txt"))) {
             writer.write("Hello, world!"); // Write data to the file
         } catch (IOException e) {
             e.printStackTrace();
