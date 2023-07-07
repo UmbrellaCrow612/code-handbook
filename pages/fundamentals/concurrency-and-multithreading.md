@@ -26,7 +26,7 @@ Concurrency and multithreading are fundamental concepts in modern programming th
 
 3. **Task Parallelism vs. Data Parallelism:** Parallel programming can be achieved through task parallelism or data parallelism. Task parallelism involves executing different tasks concurrently, while data parallelism involves performing the same operation on multiple data elements concurrently. Task-based frameworks, concurrent data structures, and parallel algorithms are used to implement task and data parallelism efficiently.
 
-![image](/parallelism-vs-concurrency.png)
+![image](/task-parallelism-vs-data-parallelism.jpeg)
 
 ## Questions
 
