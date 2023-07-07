@@ -81,7 +81,7 @@ Remember that performance optimization often involves trade-offs. Consider the s
 
 By incorporating these improvements and considering the additional points mentioned, developers can significantly enhance the performance of their applications, resulting in faster response times, better resource utilization, and improved user experience.
 
-![optimization](/trade.png)
+![optimization](/trade_offs.jpeg)
 
 ## Questions
 
