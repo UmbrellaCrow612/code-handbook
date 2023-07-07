@@ -89,9 +89,7 @@ Output is the process of sending data or information from a program to an extern
 
    This code creates a file named "output.txt" and writes the string "Hello, world!" to the file.
 
-3. **Network Output:** Programs can transmit data or information to other devices or systems over a network. Here's an example in
-
-Ruby using the `Net::HTTP` library to perform an HTTP POST request:
+3. **Network Output:** Programs can transmit data or information to other devices or systems over a network. Here's an example in Ruby using the `Net::HTTP` library to perform an HTTP POST request:
 
 ```ruby
 require 'net/http'
