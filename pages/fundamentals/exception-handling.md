@@ -70,9 +70,7 @@ except FileNotFoundError:
 
 3. **Avoid Silent Failures:** Avoid catching exceptions and doing nothing with them, as it can hide bugs and make debugging difficult. Always handle exceptions or propagate them appropriately. For example:
 
-```
-
-python
+```python
 try:
     # Code that may raise an exception
     statement1
