@@ -45,9 +45,7 @@ delete dynamicVariable; // Explicit deallocation
 
 2. **Automatic Memory Management:** Managed languages employ automatic memory management, where memory allocation and deallocation are handled by the runtime environment. This simplifies memory management for developers but can introduce slight performance overhead due to the garbage collection process.
 
-3. **Memory Pools and Caches:** Memory pools and caches are techniques used to optimize memory allocation and deallocation. They involve preallocating a block of memory and managing it as smaller fixed-size
-
-chunks. This reduces the overhead of frequent allocation and deallocation operations and improves memory access performance.
+3. **Memory Pools and Caches:** Memory pools and caches are techniques used to optimize memory allocation and deallocation. They involve preallocating a block of memory and managing it as smaller fixed-size chunks. This reduces the overhead of frequent allocation and deallocation operations and improves memory access performance.
 
 ## Questions
 
