@@ -40,7 +40,7 @@ file-name
 ## Material generation propmts idea 
 
 ```
-Give me a compressive learning guide for TOPIC
+I want to make learning materials for TOPIC, give me a list of topics i should cover
 ```
 
 For a single topic 
