@@ -6,21 +6,92 @@ Object-Oriented Programming (OOP) is a programming paradigm that organizes code 
 
 In OOP, a class is a blueprint or a template for creating objects. It defines the properties and behaviors that objects of that class will have. For example, let's consider a class called `Car`. The `Car` class may have properties such as `color`, `model`, and `mileage`, and behaviors such as `start()`, `accelerate()`, and `stop()`. An object, such as an instance of the `Car` class named `myCar`, can be created to represent a specific car with its unique state and the ability to perform actions based on the defined behaviors.
 
+```csharp
+class Car:
+    properties:
+        color
+        model
+        mileage
+
+    behaviors:
+        start()
+        accelerate()
+        stop()
+
+myCar = Car()
+```
+
 ## Encapsulation
 
 Encapsulation is the principle of bundling data and methods together within a class, hiding internal details, and exposing only the necessary information to interact with the object. It provides data protection and ensures that the object's state can be accessed and modified only through defined methods, known as getters and setters. For example, the `Car` class may have a private instance variable called `mileage`, and external code can access or modify it only through public methods such as `getMileage()` and `setMileage()`. Encapsulation helps maintain data integrity and facilitates code maintenance.
+
+```csharp
+class Car:
+    private:
+        mileage
+
+    public:
+        getMileage()
+        setMileage()
+```
 
 ## Inheritance
 
 Inheritance is a mechanism that allows a class to inherit properties and methods from another class, known as the superclass or base class. The class that inherits from the superclass is called a subclass or derived class. Inheritance promotes code reuse and enables the creation of specialized classes that extend the functionality of the base class while adding their own unique features. For example, we can have a base class called `Vehicle` with common properties and behaviors, and then create subclasses such as `Car` and `Motorcycle` that inherit from `Vehicle` and add specific properties and behaviors relevant to each type of vehicle.
 
+```csharp
+class Vehicle:
+    properties:
+        // common properties
+
+    behaviors:
+        // common behaviors
+
+class Car extends Vehicle:
+    properties:
+        // car-specific properties
+
+    behaviors:
+        // car-specific behaviors
+
+class Motorcycle extends Vehicle:
+    properties:
+        // motorcycle-specific properties
+
+    behaviors:
+        // motorcycle-specific behaviors
+```
+
 ## Polymorphism
 
 Polymorphism allows objects of different classes to be treated as objects of a common superclass. It enables the use of a single interface to represent different types of objects, providing flexibility and extensibility in code. Polymorphism is achieved through method overriding and method overloading. Method overriding occurs when a subclass provides its own implementation of a method defined in the superclass. For example, the `Car` class may override the `start()` method inherited from the `Vehicle` class to provide a specific implementation for starting a car. Method overloading occurs when multiple methods with the same name but different parameters exist within a class. For instance, the `Car` class may have multiple `accelerate()` methods with different parameter sets to handle various acceleration scenarios.
 
+```csharp
+class Vehicle:
+    start()
+
+class Car extends Vehicle:
+    start() // override
+
+class Motorcycle extends Vehicle:
+    accelerate() // method overloading
+    accelerate(speed) // method overloading
+```
+
 ## Abstraction
 
 Abstraction focuses on providing simplified and essential representations of complex systems. It involves defining classes and objects at a higher level, abstracting away unnecessary details. Abstract classes and interfaces are used to define common characteristics and behaviors that subclasses can inherit or implement, respectively. For example, we can have an abstract class called `Shape` with a method `calculateArea()` that every subclass, such as `Circle` or `Rectangle`, must implement. Abstraction enables modular design, improves code maintainability, and enhances code reusability.
+
+```csharp
+abstract class Shape:
+    abstract calculateArea()
+
+class Circle extends Shape:
+    calculateArea()
+
+class Rectangle extends Shape:
+    calculateArea()
+```
 
 ## Key Terminology
 
