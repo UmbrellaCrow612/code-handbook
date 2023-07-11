@@ -8,17 +8,13 @@ Creational patterns focus on object creation mechanisms, providing flexibility i
 
 ### Singleton
 
-The Singleton pattern ensures only one instance of a class is created and provides a global point of access to it.
-Benefits: Provides global access to a single instance, prevents multiple instantiations, and allows centralized control over the object.
-Example: Implementing a logger class that is shared across the application.
+The Singleton pattern ensures that only one instance of a class is created and provides global access to it. It is often used when there should be a single point of access to a resource or when it is necessary to limit the number of instances of a class. The pattern involves creating a class with a private constructor and a static method that returns the single instance of the class. The first time the static method is called, it creates a new instance of the class, and subsequent calls return the same instance.
 
 ![pattern](/single-pat.png)
 
 ### Factory
 
-The Factory pattern creates objects without specifying their concrete classes, allowing flexibility in object creation.
-Benefits: Decouples object creation from the client, promotes loose coupling, and provides a common interface for creating objects.
-Example: Creating different types of database connections based on the configuration.
+The Factory pattern provides an interface for creating objects without specifying their concrete classes. It allows the client code to create objects without knowing the exact class of the object being created. The pattern defines a separate factory class that encapsulates the object creation logic. The client code interacts with the factory class to create the desired objects based on the specified parameters or conditions. This pattern promotes loose coupling between the client code and the concrete classes, making it easier to add or modify object creation logic without impacting the client code.
 
 ![pattern](/factory-pat.webp)
 
