@@ -13,7 +13,7 @@ UI and UX design follow several fundamental principles and best practices to cre
 
 By adhering to these principles, designers can create interfaces that are visually appealing, intuitive, and easy to use.
 
-![ui-ux](/ui-ux.jpg)
+![ui-ux](/ui.webp)
 
 ## Layouts and Components
 
