@@ -12,5 +12,6 @@
   "remote-management": "Remote Management",
   "error-handling-and-debugging": "Error Handling And Debugging",
   "active-directory": "Active Directory",
-  "script-security": "Script Security"
+  "script-security": "Script Security",
+  "advanced-powershell": "Advanced Powershell"
 }
