@@ -10,5 +10,6 @@
   "processes-and-services": "Processes And Services",
   "powershell-providers": "PowerShell Providers",
   "remote-management": "Remote Management",
-  "error-handling-and-debugging": "Error Handling And Debugging"
+  "error-handling-and-debugging": "Error Handling And Debugging",
+  "active-directory": "Active Directory"
 }
