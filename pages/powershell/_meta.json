@@ -3,5 +3,6 @@
   "what-is-powershell": "What is PowerShell",
   "setting-up-environment": "Setting Up An Environment",
   "powershell-basics": "PowerShell Basics",
-  "variables-and-data-types": "Variables And Data Types"
+  "variables-and-data-types": "Variables And Data Types",
+  "control-flow-and-scripting": "Control Flow And Scripting"
 }
