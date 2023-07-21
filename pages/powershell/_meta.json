@@ -8,5 +8,6 @@
   "functions-and-modules": "Functions And Modules",
   "files-and-folders": "Files And Folders",
   "processes-and-services": "Processes And Services",
-  "powershell-providers": "PowerShell Providers"
+  "powershell-providers": "PowerShell Providers",
+  "remote-management": "Remote Management"
 }
