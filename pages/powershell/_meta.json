@@ -4,5 +4,6 @@
   "setting-up-environment": "Setting Up An Environment",
   "powershell-basics": "PowerShell Basics",
   "variables-and-data-types": "Variables And Data Types",
-  "control-flow-and-scripting": "Control Flow And Scripting"
+  "control-flow-and-scripting": "Control Flow And Scripting",
+  "functions-and-modules": "Functions And Modules"
 }
