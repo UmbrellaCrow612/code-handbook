@@ -7,5 +7,6 @@
   "control-flow-and-scripting": "Control Flow And Scripting",
   "functions-and-modules": "Functions And Modules",
   "files-and-folders": "Files And Folders",
-  "processes-and-services": "Processes And Services"
+  "processes-and-services": "Processes And Services",
+  "powershell-providers": "PowerShell Providers"
 }
