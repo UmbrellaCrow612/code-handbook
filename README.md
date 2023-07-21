@@ -40,6 +40,10 @@ file-name
 ## Material generation propmts idea 
 
 ```
+i want to teach powershell to students, give me a learning material list of topics / ideas i should cover in my material 
+```
+
+```
 I want to make learning materials for TOPIC, give me a list of topics i should cover
 ```
 
