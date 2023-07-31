@@ -1,0 +1,7 @@
+[data-theme='dark'] ::selection {
+    background-color: pink;
+}
+
+[data-theme='light'] ::selection {
+    background-color: pink;
+}
