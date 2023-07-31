@@ -6,5 +6,12 @@
   "networking": "Networking",
   "databases": "Databases",
   "powershell": "Powershell",
-  "resources": "Resources"
+  "resources": "Resources",
+  "about": {
+    "type": "page",
+    "title": "About",
+    "theme": {
+      "typesetting": "article"
+    }
+  }
 }
