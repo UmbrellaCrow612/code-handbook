@@ -11,6 +11,8 @@ A variable is a named storage location in the computer's memory that can hold a 
 3. `Type`: Variables have a specific data type that defines the kind of values they can hold and the operations that can be performed on them.
 4. `Scope`: The scope of a variable determines where it can be accessed within a program. Variables can have local scope (limited to a specific block of code) or global scope (accessible throughout the entire program).
 
+![code_block](/variables_snappify_codeblock.png)
+
 ## Data Types
 
 Data types specify the kind of data that can be stored in a variable. They determine the range of values that a variable can hold and the operations that can be performed on it. The choice of data type depends on the nature of the data being stored and the operations to be performed on that data. Common data types include:
