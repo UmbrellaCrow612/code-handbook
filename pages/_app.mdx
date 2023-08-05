@@ -1,0 +1,9 @@
+import "../global.css";
+
+export default function App({ Component, pageProps }) {
+  return (
+    <div className="selection:bg-[#79FEE1] dark:selection:bg-[#F81BE5]">
+      <Component {...pageProps} />
+    </div>
+  );
+}
