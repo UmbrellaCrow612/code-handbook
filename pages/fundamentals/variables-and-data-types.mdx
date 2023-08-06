@@ -1,3 +1,5 @@
+import { Tabs, Tab } from "nextra/components";
+
 # Variables and Data Types
 
 In programming, variables and data types play a crucial role in storing and manipulating information. Variables are containers that hold values, and data types define the type of data that can be stored in a variable. Understanding variables and data types is essential for writing effective and reliable code. Let's dive into a comprehensive explanation of variables and data types.
@@ -48,80 +50,96 @@ Data types specify the kind of data that can be stored in a variable. They deter
 
 ## Implementation
 
-### Python
+<Tabs items={["python", "java", "javascript"]} defaultIndex="0">
+
+<Tab>
 
 ```python
 # Variables and data types in Python
 
 # Integer variable
+
 age = 25
 
 # Floating-point variable
+
 pi = 3.14
 
 # String variable
+
 name = "John Doe"
 
 # Boolean variable
+
 is_student = True
 
 # List variable
+
 numbers = [1, 2, 3, 4, 5]
 
 # Dictionary variable
+
 person = {"name": "Alice", "age": 30, "is_student": False}
 
 # Accessing variables
+
 print(age)
 print(name)
 
 # Modifying variables
+
 age = 26
 name = "Jane Smith"
 
 # Type conversion
+
 num_string = "10"
 num = int(num_string)
+
 ```
 
-### Java
+</Tab>
+
+<Tab>
 
 ```java
 // Variables and data types in Java
 
 public class Main {
-    public static void main(String[] args) {
-        // Integer variable
-        int age = 25;
+  public static void main(String[] args) {
+      // Integer variable
+      int age = 25;
 
-        // Floating-point variable
-        double pi = 3.14;
+      // Floating-point variable
+      double pi = 3.14;
 
-        // String variable
-        String name = "John Doe";
+      // String variable
+      String name = "John Doe";
 
-        // Boolean variable
-        boolean isStudent = true;
+      // Boolean variable
+      boolean isStudent = true;
 
-        // Array variable
-        int[] numbers = {1, 2, 3, 4, 5};
+      // Array variable
+      int[] numbers = {1, 2, 3, 4, 5};
 
-        // Accessing variables
-        System.out.println(age);
-        System.out.println(name);
+      // Accessing variables
+      System.out.println(age);
+      System.out.println(name);
 
-        // Modifying variables
-        age = 26;
-        name = "Jane Smith";
+      // Modifying variables
+      age = 26;
+      name = "Jane Smith";
 
-        // Type conversion
-        String numString = "10";
-        int num = Integer.parseInt(numString);
-    }
+      // Type conversion
+      String numString = "10";
+      int num = Integer.parseInt(numString);
+  }
 }
 ```
 
-### JavaScript
+</Tab>
+
+<Tab>
 
 ```javascript
 // Variables and data types in JavaScript
@@ -156,6 +174,10 @@ name = "Jane Smith";
 let numString = "10";
 let num = parseInt(numString);
 ```
+
+</Tab>
+
+</Tabs>
 
 ## Type Conversion
 
