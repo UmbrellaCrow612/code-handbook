@@ -5,8 +5,8 @@
   "algo": "Algorithms",
   "networking": "Networking",
   "databases": "Databases",
-  "devops": "DevOps",
   "powershell": "Powershell",
+  "devops": "DevOps",
   "resources": "Resources",
   "about": {
     "type": "page",
