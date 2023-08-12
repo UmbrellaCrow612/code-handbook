@@ -1,0 +1,10 @@
+{
+  "index": "Introduction",
+  "ci-cd": "CI/CD",
+  "deployment-and-automated": "Deployment and Automated",
+  "infrastructure-automation": "Infrastructure Automation",
+  "containerization-and-configuration": "Containerization and Configuration",
+  "testing-and-monitoring": "Testing and Monitoring",
+  "microservices-architecture": "Microservices Architecture",
+  "integrating-security": "Integrating Security"
+}
