@@ -1,0 +1,45 @@
+# CI / CD
+
+## Continuous Integration (CI)
+
+Continuous Integration (CI) is a software development practice that focuses on automating and streamlining the process of integrating code changes into a shared code repository. The main goal of CI is to catch integration issues early and ensure that the codebase remains consistent and functional as multiple developers work on it simultaneously.
+
+### Key Concepts:
+
+1. **Code Integration**: Developers frequently commit their code changes to a central version control repository (e.g., Git). Each commit represents a small, incremental change.
+
+2. **Automated Testing**: After a code change is committed, automated tests are triggered. These tests include unit tests, integration tests, and other types of checks to validate the correctness and quality of the code.
+
+3. **Immediate Feedback**: Developers receive immediate feedback about the success or failure of their code changes. This allows them to identify and fix issues early in the development cycle.
+
+4. **Early Bug Detection**: CI helps identify integration issues, conflicts, and bugs that might arise when different code changes interact.
+
+## Continuous Delivery (CD)
+
+Continuous Delivery (CD) is an extension of CI that goes beyond code integration and automated testing. It focuses on automating the process of preparing and deploying code changes to various environments, such as staging and production, in a consistent and reliable manner.
+
+### Key Concepts:
+
+1. **Automated Deployment**: Once code changes pass the automated tests in the CI pipeline, they are automatically prepared and deployed to different environments for further testing or production use.
+
+2. **Consistency**: CD ensures that the deployment process is consistent and repeatable. This reduces the chances of deployment-related errors caused by manual interventions.
+
+3. **Staging Environment**: Code changes are often deployed to a staging environment first. This environment closely mimics the production environment and allows for final testing before releasing changes to users.
+
+4. **Release Candidate**: The version of the software deployed in the staging environment is considered a "release candidate" and undergoes thorough testing.
+
+## Deployment
+
+Deployment is the process of making software or code changes available and operational in a specific environment. It involves taking the code that has been tested and preparing it for use by end-users or customers.
+
+### Key Concepts:
+
+1. **Deployment Environments**: Different environments are used to stage code changes before they reach production. These environments can include development, testing, staging, and production environments.
+
+2. **Release Management**: Deployment involves managing the release of software updates to different environments. This includes version control, change tracking, and documentation.
+
+3. **Rollbacks**: In case of unexpected issues or errors after deployment, rollbacks allow reverting to a previous version of the software to maintain stability.
+
+4. **Automation**: Automation tools and scripts play a crucial role in deploying code changes consistently and reliably across various environments.
+
+In summary, CI/CD practices aim to enhance software development by automating the integration, testing, and deployment processes. This helps maintain code quality, reduce integration issues, and deliver reliable software updates more efficiently.
