@@ -2,5 +2,6 @@
   "index": "Introduction",
   "ci-cd": "CI/CD",
   "deployment-and-automated": "Deployment and Automated",
-  "infrastructure-automation": "Infrastructure Automation"
+  "infrastructure-automation": "Infrastructure Automation",
+  "containerization-and-configuration": "Containerization and Configuration"
 }
