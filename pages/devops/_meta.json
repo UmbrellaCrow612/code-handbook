@@ -4,5 +4,6 @@
   "deployment-and-automated": "Deployment and Automated",
   "infrastructure-automation": "Infrastructure Automation",
   "containerization-and-configuration": "Containerization and Configuration",
-  "testing-and-monitoring": "Testing and Monitoring"
+  "testing-and-monitoring": "Testing and Monitoring",
+  "microservices-architecture": "Microservices Architecture"
 }
