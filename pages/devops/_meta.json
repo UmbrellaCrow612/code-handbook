@@ -1,5 +1,6 @@
 {
   "index": "Introduction",
   "ci-cd": "CI/CD",
-  "deployment-and-automated": "Deployment and Automated"
+  "deployment-and-automated": "Deployment and Automated",
+  "infrastructure-automation": "Infrastructure Automation"
 }
