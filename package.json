@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/UmbrellaCrow612/se-docs#readme",
   "dependencies": {
-    "next": "^13.0.6",
+    "next": "^14.0.0",
     "nextra": "latest",
     "nextra-theme-docs": "latest",
     "react": "^18.2.0",
